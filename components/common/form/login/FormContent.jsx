@@ -9,8 +9,8 @@ const FormContent = () => {
       {/* <!--Login Form--> */}
       <form method="post">
         <div className="form-group">
-          <label>Username</label>
-          <input type="text" name="username" placeholder="Username" required />
+          <label>Candidate Name</label>
+          <input type="text" name="username" placeholder="Candidate Name" required />
         </div>
         {/* name */}
 

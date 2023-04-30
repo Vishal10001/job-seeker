@@ -102,40 +102,40 @@ const index = () => {
       </section>
       {/* <!-- End Top Companies --> */}
 
-      <section className="testimonial-section-two style-two">
+      {/* <section className="testimonial-section-two style-two">
         <div className="container-fluid">
           <div className="testimonial-left">
             <img src="images/resource/testimonial-left.png" alt="testimonial" />
-          </div>
+          </div> */}
           {/* End left img group */}
 
-          <div className="testimonial-right">
+          {/* <div className="testimonial-right">
             <img
               src="images/resource/testimonial-right.png"
               alt="testimonial"
             />
-          </div>
+          </div> */}
           {/* End right img group */}
 
-          <div className="sec-title text-center">
+          {/* <div className="sec-title text-center">
             <h2>Testimonials From Our Customers</h2>
             <div className="text">
               Lorem ipsum dolor sit amet elit, sed do eiusmod tempor
             </div>
-          </div>
+          </div> */}
           {/* <!-- Sec Title --> */}
 
-          <div className="carousel-outer" data-aos="fade-up">
+          {/* <div className="carousel-outer" data-aos="fade-up">
             <div className="testimonial-carousel">
               <Testimonial2 />
-            </div>
+            </div> */}
             {/* <!-- Testimonial Carousel --> */}
-          </div>
+          {/* </div>
         </div>
-      </section>
+      </section> */}
       {/* <!-- End Testimonial Section --> */}
 
-      <section className="job-categories">
+      {/* <section className="job-categories">
         <div className="auto-container">
           <div className="sec-title text-center">
             <h2>Popular Job Categories</h2>
@@ -146,12 +146,12 @@ const index = () => {
             className="row "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-          >
+          > */}
             {/* <!-- Category Block --> */}
-            <JobCategorie1 />
+            {/* <JobCategorie1 />
           </div>
         </div>
-      </section>
+      </section> */}
       {/* End Job Categorie Section */}
 
       <section className="job-section style-two">
