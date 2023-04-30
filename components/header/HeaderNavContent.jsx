@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {
-    blogItems,
+    // blogItems,
     candidateItems,
     employerItems,
     findJobItems,
@@ -233,7 +233,7 @@ const HeaderNavContent = () => {
                     </li>
                     {/* End Candidates menu items */}
 
-                    <li
+                    {/* <li
                         className={`${
                             isActiveParentChaild(blogItems, router.asPath)
                                 ? "current"
@@ -260,10 +260,10 @@ const HeaderNavContent = () => {
                                 </li>
                             ))}
                         </ul>
-                    </li>
+                    </li> */}
                     {/* End Blog menu items */}
 
-                    <li
+                    {/* <li
                         className={`${
                             isActiveParentChaild(pageItems, router.asPath) ||
                             isActiveParentChaild(
@@ -329,7 +329,7 @@ const HeaderNavContent = () => {
                                 </li>
                             ))}
                         </ul>
-                    </li>
+                    </li> */}
                     {/* End Pages menu items */}
                 </ul>
             </nav>

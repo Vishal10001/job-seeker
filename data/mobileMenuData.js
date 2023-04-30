@@ -245,96 +245,96 @@ export default [
             // },
         ],
     },
-    {
-        id: 8,
-        label: "Blog",
-        items: [
-            {
-                name: "Blog List",
-                routePath: "/blog-list-v1",
-            },
-            // {
-            //     name: "Blog List V2",
-            //     routePath: "/blog-list-v2",
-            // },
-            // {
-            //     name: "Blog List V3",
-            //     routePath: "/blog-list-v3",
-            // },
-            {
-                name: "Blog Details",
-                routePath: "/blog-details/1",
-            },
-        ],
-    },
-    {
-        id: 9,
-        label: "Pages",
-        items: [
-            {
-                name: "About",
-                routePath: "/about",
-            },
-            {
-                name: "Pricing",
-                routePath: "/pricing",
-            },
-            {
-                name: "FAQ's",
-                routePath: "/faq",
-            },
-            {
-                name: "Terms",
-                routePath: "/terms",
-            },
-            {
-                name: "Invoice",
-                routePath: "/invoice",
-            },
-            {
-                name: "Contact",
-                routePath: "/contact",
-            },
-            // {
-            //     name: "404",
-            //     routePath: "/404",
-            // },
-        ],
-    },
-    {
-        id: 10,
-        label: "Users",
-        items: [
-            // {
-            //     name: "Shop List",
-            //     routePath: "/shop/shop-list",
-            // },
-            // {
-            //     name: "Shop Single",
-            //     routePath: "/shop/shop-single/1",
-            // },
-            // {
-            //     name: " Cart",
-            //     routePath: "/shop/cart",
-            // },
-            // {
-            //     name: "Checkout",
-            //     routePath: "/shop/checkout",
-            // },
-            // {
-            //     name: "Order Completed",
-            //     routePath: "/shop/order-completed",
-            // },
-            {
-                name: "Login",
-                routePath: "/login",
-            },
-            {
-                name: "Register",
-                routePath: "/register",
-            },
-        ],
-    },
+    // {
+    //     id: 8,
+    //     label: "Blog",
+    //     items: [
+    //         {
+    //             name: "Blog List",
+    //             routePath: "/blog-list-v1",
+    //         },
+    //         // {
+    //         //     name: "Blog List V2",
+    //         //     routePath: "/blog-list-v2",
+    //         // },
+    //         // {
+    //         //     name: "Blog List V3",
+    //         //     routePath: "/blog-list-v3",
+    //         // },
+    //         {
+    //             name: "Blog Details",
+    //             routePath: "/blog-details/1",
+    //         },
+    //     ],
+    // },
+    // {
+    //     id: 9,
+    //     label: "Pages",
+    //     items: [
+    //         {
+    //             name: "About",
+    //             routePath: "/about",
+    //         },
+    //         {
+    //             name: "Pricing",
+    //             routePath: "/pricing",
+    //         },
+    //         {
+    //             name: "FAQ's",
+    //             routePath: "/faq",
+    //         },
+    //         {
+    //             name: "Terms",
+    //             routePath: "/terms",
+    //         },
+    //         {
+    //             name: "Invoice",
+    //             routePath: "/invoice",
+    //         },
+    //         {
+    //             name: "Contact",
+    //             routePath: "/contact",
+    //         },
+    //         // {
+    //         //     name: "404",
+    //         //     routePath: "/404",
+    //         // },
+    //     ],
+    // },
+    // {
+    //     id: 10,
+    //     label: "Users",
+    //     items: [
+    //         // {
+    //         //     name: "Shop List",
+    //         //     routePath: "/shop/shop-list",
+    //         // },
+    //         // {
+    //         //     name: "Shop Single",
+    //         //     routePath: "/shop/shop-single/1",
+    //         // },
+    //         // {
+    //         //     name: " Cart",
+    //         //     routePath: "/shop/cart",
+    //         // },
+    //         // {
+    //         //     name: "Checkout",
+    //         //     routePath: "/shop/checkout",
+    //         // },
+    //         // {
+    //         //     name: "Order Completed",
+    //         //     routePath: "/shop/order-completed",
+    //         // },
+    //         {
+    //             name: "Login",
+    //             routePath: "/login",
+    //         },
+    //         {
+    //             name: "Register",
+    //             routePath: "/register",
+    //         },
+    //     ],
+    // },
     // {
     //     id: 11,
     //     label: "",
