@@ -282,7 +282,7 @@ export const candidateItems = [
     },
 ];
 
-export const blogItems = [
+// export const blogItems = [
     // {
     //     name: "Blog List",
     //     routePath: "/blog-list-v1",
@@ -299,9 +299,9 @@ export const blogItems = [
     //     name: "Blog Details",
     //     routePath: "/blog-details/1",
     // },
-];
+// ];
 
-export const pageItems = [
+// export const pageItems = [
     // {
     //     name: "About",
     //     routePath: "/about",
@@ -330,13 +330,13 @@ export const pageItems = [
     // //     name: "404",
     // //     routePath: "/404",
     // // },
-];
+// ];
 
-export const shopItems = [
-    {
-        id: 1,
-        title: "Users",
-        items: [
+// export const shopItems = [
+//     {
+//         id: 1,
+//         title: "Users",
+        // items: [
             // {
             //     name: "Shop List",
             //     routePath: "/shop/shop-list",
@@ -357,14 +357,14 @@ export const shopItems = [
             //     name: "Order Completed",
             //     routePath: "/shop/order-completed",
             // },
-            {
-                name: "Login",
-                routePath: "/login",
-            },
-            {
-                name: "Register",
-                routePath: "/register",
-            },
-        ],
-    },
-];
+//             {
+//                 name: "Login",
+//                 routePath: "/login",
+//             },
+//             {
+//                 name: "Register",
+//                 routePath: "/register",
+//             },
+//         ],
+//     },
+// ];
