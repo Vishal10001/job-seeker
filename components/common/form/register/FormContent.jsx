@@ -2,7 +2,7 @@ const FormContent = () => {
   return (
     <form method="post" action="add-parcel.html">
       <div className="form-group">
-        <label>Compny Name</label>
+        <label>Name</label>
         <input
           type="text"
           name="compnyname"
@@ -12,7 +12,7 @@ const FormContent = () => {
       </div>
 
       <div className="form-group">
-        <label>Compny Address</label>
+        <label>Address</label>
         <input
           type="text"
           name="address"
@@ -22,25 +22,37 @@ const FormContent = () => {
       </div>
 
       <div className="form-group">
-        <label>ZipCode</label>
-        <input type="text" name="zipcode" pattern="^\s*?\d{5}(?:[-\s]\d{4})?\s*?$" placeholder="ZipCode" required />
+        <label>State </label>
+        <input type="text" name="State" placeholder="State" required />
       </div>
 
       <div className="form-group">
-        <label>Phone No.</label>
-        <input type="text" name="phone" maxLength={10} pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number" required />
-      </div>  
-
-      {/* <div className="form-group">
-        <label>Phone No.</label>
+        <label>ZipCode</label>
         <input
-          type="tel"
-          name="phone"
+          type="text"
+          name="zipcode"
+          pattern="^\s*?\d{5}(?:[-\s]\d{4})?\s*?$"
+          placeholder="ZipCode"
+          required
+        />
+      </div>
+
+      <div className="form-group">
+        <label>Country </label>
+        <input type="text" name="country" placeholder="Country" required />
+      </div>
+
+      <div className="form-group">
+        <label>Mobile</label>
+        <input
+          type="text"
+          name="mobile"
+          maxLength={10}
           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
           placeholder="Phone Number"
           required
         />
-      </div> */}
+      </div>
 
       <div className="form-group">
         <label>WebSite</label>
