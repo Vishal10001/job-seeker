@@ -24,11 +24,11 @@ const HeaderNavContent = () => {
                 <ul className="navigation" id="navbar">
                     {/* current dropdown */}
                     <li
-                        className={`${
-                            isActiveParent(homeItems, router.asPath)
-                                ? "current"
-                                : ""
-                        } dropdown`}
+                        // className={`${
+                        //     isActiveParent(homeItems, router.asPath)
+                        //         ? "current"
+                        //         : ""
+                        // } dropdown`}
                     >
                         <span>Home</span>
                         <div className="mega-menu">
@@ -51,9 +51,9 @@ const HeaderNavContent = () => {
                                                     }
                                                     key={i}
                                                 >
-                                                    <Link href={menu.routePath}>
+                                                    {/* <Link href={menu.routePath}>
                                                         {menu.name}
-                                                    </Link>
+                                                    </Link> */}
                                                 </li>
                                             ))}
                                         </ul>
@@ -162,15 +162,15 @@ const HeaderNavContent = () => {
                                         : ""
                                 }
                             >
-                                <Link href="/employers-dashboard/dashboard">
+                                {/* <Link href="/employers-dashboard/dashboard">
                                     Employers Dashboard
-                                </Link>
+                                </Link> */}
                             </li>
                         </ul>
                     </li>
                     {/* End Employers menu items */}
 
-                    <li
+                    {/* <li
                         className={`${
                             isActiveParent(candidateItems, router.asPath) ||
                             router.asPath === "/candidates-dashboard/dashboard"
@@ -230,7 +230,7 @@ const HeaderNavContent = () => {
                                 </Link>
                             </li>
                         </ul>
-                    </li>
+                    </li> */}
                     {/* End Candidates menu items */}
 
                     {/* <li

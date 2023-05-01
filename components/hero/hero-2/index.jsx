@@ -31,10 +31,10 @@ const index = () => {
               {/* <!-- End Popular Search --> */}
 
               <div className="bottom-box">
-                <div className="count-employers">
+                {/* <div className="count-employers">
                   <span className="title">10k+ Candidates</span>
                   <img src="images/resource/multi-peoples.png" alt="" />
-                </div>
+                </div> */}
                 <Link
                   href="/candidates-dashboard/cv-manager"
                   className="upload-cv"

@@ -2,21 +2,21 @@ const FormContent = () => {
   return (
     <form method="post" action="add-parcel.html">
       <div className="form-group">
-        <label>Name</label>
+        <label>Company Name</label>
         <input
           type="text"
-          name="compnyname"
-          placeholder="Compny Name"
+          name="companyname"
+          placeholder="Company Name"
           required
         />
       </div>
 
       <div className="form-group">
-        <label>Address</label>
+        <label>Company Address</label>
         <input
           type="text"
-          name="address"
-          placeholder="Compny Address"
+          name="companyaddress"
+          placeholder="Company Address"
           required
         />
       </div>
@@ -38,18 +38,24 @@ const FormContent = () => {
       </div>
 
       <div className="form-group">
-        <label>Country </label>
-        <input type="text" name="country" placeholder="Country" required />
-      </div>
-
-      <div className="form-group">
-        <label>Mobile</label>
+        <label>Company Phone</label>
         <input
           type="text"
-          name="mobile"
+          name="phone"
           maxLength={10}
           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
           placeholder="Phone Number"
+          required
+        />
+      </div>
+
+      <div className="form-group">
+        <label>Email Address</label>
+        <input
+          type="email"
+          name="email"
+          pattern=".+@globex\.com"
+          placeholder="Email"
           required
         />
       </div>
@@ -65,16 +71,6 @@ const FormContent = () => {
         />
       </div>
 
-      <div className="form-group">
-        <label>Email Address</label>
-        <input
-          type="email"
-          name="username"
-          pattern=".+@globex\.com"
-          placeholder="Email"
-          required
-        />
-      </div>
       {/* name */}
 
       <div className="form-group">

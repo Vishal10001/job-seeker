@@ -24,17 +24,17 @@ export const homeItems = [
             // },
         // ],
     // },
-    {
-        id: 2,
-        items: [
+    // {
+    //     id: 2,
+    //     items: [
             // {
             //     name: "Home Page 06",
             //     routePath: "/home-6",
             // },
-            {
-                name: "Home Page",
-                routePath: "/home-7",
-            },
+            // {
+            //     name: "Home Page",
+            //     routePath: "/home-7",
+            // },
             // {
             //     name: "Home Page 08",
             //     routePath: "/home-8",
@@ -47,8 +47,8 @@ export const homeItems = [
             //     name: "Home Page 10",
             //     routePath: "/home-10",
             // },
-        ],
-    },
+    //     ],
+    // },
     // {
     //     id: 3,
     //     items: [
@@ -164,14 +164,14 @@ export const findJobItems = [
     //         },
     //     ],
     // },
-    {
-        id: 4,
-        title: "Jobs Single",
-        items: [
-            {
-                name: "Job Single",
-                routePath: "/job-single-v1/1",
-            },
+    // {
+    //     id: 4,
+    //     title: "Jobs Single",
+    //     items: [
+    //         {
+    //             name: "Job Single",
+    //             routePath: "/job-single-v1/1",
+    //         },
             // {
             //     name: "Job Single V2",
             //     routePath: "/job-single-v2/2",
@@ -188,8 +188,8 @@ export const findJobItems = [
             //     name: "Job Single V5",
             //     routePath: "/job-single-v5/5",
             // },
-        ],
-    },
+        // ],
+    // },
 ];
 
 export const employerItems = [
@@ -215,14 +215,14 @@ export const employerItems = [
             // },
         ],
     },
-    {
-        id: 2,
-        title: "Employers Single",
-        items: [
-            {
-                name: "Employers Single",
-                routePath: "/employers-single-v1/1",
-            },
+    // {
+    //     id: 2,
+    //     title: "Employers Single",
+    //     items: [
+    //         {
+    //             name: "Employers Single",
+    //             routePath: "/employers-single-v1/1",
+    //         },
             // {
             //     name: "Employers Single V2",
             //     routePath: "/employers-single-v2/2",
@@ -231,8 +231,8 @@ export const employerItems = [
             //     name: "Employers Single V3",
             //     routePath: "/employers-single-v3/3",
             // },
-        ],
-    },
+    //     ],
+    // },
 ];
 
 export const candidateItems = [

@@ -18,9 +18,9 @@ const FooterContent2 = () => {
         { name: "Privacy & Securty", routeLink: "/" },
         { name: "Terms of Service", routeLink: "/" },
         { name: "Communications", routeLink: "/" },
-        { name: "Referral Terms", routeLink: "/" },
-        { name: "Lending Licnses", routeLink: "/" },
-        { name: "Disclaimers", routeLink: "/" },
+        // { name: "Referral Terms", routeLink: "/" },
+        // { name: "Lending Licnses", routeLink: "/" },
+        // { name: "Disclaimers", routeLink: "/" },
       ],
     },
     {
@@ -28,16 +28,16 @@ const FooterContent2 = () => {
       list: [
         { name: "Support", routeLink: "/" },
         { name: "How It Works", routeLink: "/" },
-        { name: "For Employers", routeLink: "/" },
-        { name: "Underwriting", routeLink: "/" },
-        { name: "Underwriting", routeLink: "/" },
+        { name: "Featured Jobs", routeLink: "/" },
+        { name: "Featured Candidates", routeLink: "/" },
+        // { name: "Underwriting", routeLink: "/" },
         { name: "Contact Us", routeLink: "/" },
       ],
     },
   ];
   return (
     <>
-      <div className="footer-column col-lg-3 col-md-6 col-sm-12">
+      {/* <div className="footer-column col-lg-3 col-md-6 col-sm-12">
         <div className="footer-widget links-widget">
           <h4 className="widget-title">Find Jobs</h4>
           <div className="widget-content">
@@ -50,7 +50,7 @@ const FooterContent2 = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* End .footer-column */}
 
       <div className="footer-column col-lg-5 col-md-6 col-sm-12">

@@ -67,7 +67,7 @@ const index = () => {
       </section>
       {/* <!-- End Job Section --> */}
 
-      <section className="features-section">
+      {/* <section className="features-section">
         <div className="auto-container">
           <div className="sec-title">
             <h2>Featured Cities</h2>
@@ -80,7 +80,7 @@ const index = () => {
             <FeaturedBlock />
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <!-- End Features Section --> */}
 
       <CallToAction2 />
@@ -104,20 +104,20 @@ const index = () => {
       </section>
       {/* <!-- End Candidates Section --> */}
 
-      <section className="news-section-two">
+      {/* <section className="news-section-two">
         <div className="auto-container">
           <div className="sec-title text-center">
             <h2>Recent News Articles</h2>
             <div className="text">
               Fresh job related news content posted each day.
             </div>
-          </div>
+          </div> */}
           {/* End ."sec-title */}
-          <div className="row" data-aos="fade-up">
+          {/* <div className="row" data-aos="fade-up">
             <Blog />
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <!-- End News Section --> */}
 
       <CallToAction3 />

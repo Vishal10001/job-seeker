@@ -1,11 +1,13 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import LoginWithSocial from "./LoginWithSocial";
-import Form from "./FormContent";
+import EmployerForm from "./FormContent";
+import CandidateForm from "./CandidateForm";
+
 
 const Register = () => {
   return (
     <div className="form-inner">
-      <h3>Create a Free Superio Account</h3>
+      <h3>Create Account</h3>
 
       <Tabs>
         <div className="form-group register-dual">
@@ -26,23 +28,23 @@ const Register = () => {
         {/* End .form-group */}
 
         <TabPanel>
-          <Form />
+          <CandidateForm />
         </TabPanel>
         {/* End cadidates Form */}
 
         <TabPanel>
-          <Form />
+          <EmployerForm />
         </TabPanel>
         {/* End Employer Form */}
       </Tabs>
       {/* End form-group */}
 
-      <div className="bottom-box">
+      {/* <div className="bottom-box">
         <div className="divider">
           <span>or</span>
         </div>
         <LoginWithSocial />
-      </div>
+      </div> */}
       {/* End bottom-box LoginWithSocial */}
     </div>
   );
