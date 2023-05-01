@@ -32,8 +32,8 @@ const FilterSidebar = () => {
                         <LocationBox />
                     </div>
 
-                    <p>Radius around selected destination</p>
-                    <DestinationRangeSlider />
+                    {/*<p>Radius around selected destination</p>*/}
+                    {/*<DestinationRangeSlider />*/}
                 </div>
                 {/* <!-- Filter Block --> */}
 
@@ -53,11 +53,11 @@ const FilterSidebar = () => {
                 </div> */}
                 {/* <!-- Filter Block --> */}
 
-                <div className="filter-block">
-                    <h4>Foundation Date</h4>
+                {/*<div className="filter-block">*/}
+                {/*    <h4>Foundation Date</h4>*/}
 
-                    <FoundationDate />
-                </div>
+                {/*    <FoundationDate />*/}
+                {/*</div>*/}
                 {/* <!-- Filter Block --> */}
             </div>
             {/* Filter Outer */}

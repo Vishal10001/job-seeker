@@ -36,8 +36,8 @@ const FilterSidebar = () => {
                         <LocationBox />
                     </div>
 
-                    <p>Radius around selected destination</p>
-                    <DestinationRangeSlider />
+                    {/*<p>Radius around selected destination</p>*/}
+                    {/*<DestinationRangeSlider />*/}
                 </div>
                 {/* <!-- Filter Block --> */}
 
@@ -55,10 +55,10 @@ const FilterSidebar = () => {
                 </div>
                 {/* <!-- Switchbox Outer --> */}
 
-                <div className="checkbox-outer">
-                    <h4>Date Posted</h4>
-                    <DatePosted />
-                </div>
+                {/*<div className="checkbox-outer">*/}
+                {/*    <h4>Date Posted</h4>*/}
+                {/*    <DatePosted />*/}
+                {/*</div>*/}
                 {/* <!-- Checkboxes Ouer --> */}
 
                 <div className="checkbox-outer">
@@ -74,10 +74,10 @@ const FilterSidebar = () => {
                 </div>
                 {/* <!-- Filter Block --> */}
 
-                <div className="filter-block">
-                    <h4>Tags</h4>
-                    <Tag />
-                </div>
+                {/*<div className="filter-block">*/}
+                {/*    <h4>Tags</h4>*/}
+                {/*    <Tag />*/}
+                {/*</div>*/}
                 {/* <!-- Filter Block --> */}
             </div>
             {/* Filter Outer */}

@@ -35,12 +35,12 @@ const index = () => {
                   <span className="title">10k+ Candidates</span>
                   <img src="images/resource/multi-peoples.png" alt="" />
                 </div> */}
-                <Link
-                  href="/candidates-dashboard/cv-manager"
-                  className="upload-cv"
-                >
-                  <span className="icon flaticon-file"></span> Upload your CV
-                </Link>
+                {/*<Link*/}
+                {/*  href="/candidates-dashboard/cv-manager"*/}
+                {/*  className="upload-cv"*/}
+                {/*>*/}
+                {/*  <span className="icon flaticon-file"></span> Upload your CV*/}
+                {/*</Link>*/}
               </div>
             </div>
           </div>

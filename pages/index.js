@@ -5,7 +5,7 @@ import Home2 from "../components/home-2";
 const index = () => {
     return (
         <>
-            <Seo pageTitle="Home-1" />
+            <Seo pageTitle="Home" />
             <Home2 />
         </>
     );

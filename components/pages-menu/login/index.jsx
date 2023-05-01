@@ -2,6 +2,7 @@ import FormContent from "../../common/form/login/FormContent";
 import LoginPopup from "../../common/form/login/LoginPopup";
 import MobileMenu from "../../header/MobileMenu";
 import Header from "./Header";
+import LoginTab from "../../common/form/login/LoginTab";
 
 const index = () => {
   return (
@@ -23,7 +24,7 @@ const index = () => {
         <div className="outer-box">
           {/* <!-- Login Form --> */}
           <div className="login-form default-form">
-            <FormContent />
+            <LoginTab redirect />
           </div>
           {/* <!--End Login Form --> */}
         </div>

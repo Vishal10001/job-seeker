@@ -13,7 +13,7 @@ import {
     isActiveLink,
     isActiveParentChaild,
 } from "../../utils/linkActiveChecker";
-import { useRouter } from "next/router";
+import {useRouter} from "next/router";
 
 const HeaderNavContent = () => {
     const router = useRouter();
@@ -24,43 +24,45 @@ const HeaderNavContent = () => {
                 <ul className="navigation" id="navbar">
                     {/* current dropdown */}
                     <li
-                        // className={`${
-                        //     isActiveParent(homeItems, router.asPath)
-                        //         ? "current"
-                        //         : ""
+                        className={`${
+                            isActiveParent(homeItems, router.asPath)
+                                ? "current"
+                                : ""}`}
                         // } dropdown`}
                     >
-                        <span>Home</span>
-                        <div className="mega-menu">
-                            <div className="mega-menu-bar row pt-0">
-                                {homeItems.map((item) => (
-                                    <div
-                                        className="column col-lg-3 col-md-3 col-sm-12"
-                                        key={item.id}
-                                    >
-                                        <ul>
-                                            {item.items.map((menu, i) => (
-                                                <li
-                                                    className={
-                                                        isActiveLink(
-                                                            menu.routePath,
-                                                            router.asPath
-                                                        )
-                                                            ? "current"
-                                                            : ""
-                                                    }
-                                                    key={i}
-                                                >
-                                                    {/* <Link href={menu.routePath}>
-                                                        {menu.name}
-                                                    </Link> */}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+                        <Link href='/'>
+                            <span>Home</span>
+                        </Link>
+                        {/*<div className="mega-menu">*/}
+                        {/*    <div className="mega-menu-bar row pt-0">*/}
+                        {/*        {homeItems.map((item) => (*/}
+                        {/*            <div*/}
+                        {/*                className="column col-lg-3 col-md-3 col-sm-12"*/}
+                        {/*                key={item.id}*/}
+                        {/*            >*/}
+                        {/*                <ul>*/}
+                        {/*                    {item.items.map((menu, i) => (*/}
+                        {/*                        <li*/}
+                        {/*                            className={*/}
+                        {/*                                isActiveLink(*/}
+                        {/*                                    menu.routePath,*/}
+                        {/*                                    router.asPath*/}
+                        {/*                                )*/}
+                        {/*                                    ? "current"*/}
+                        {/*                                    : ""*/}
+                        {/*                            }*/}
+                        {/*                            key={i}*/}
+                        {/*                        >*/}
+                        {/*                            /!* <Link href={menu.routePath}>*/}
+                        {/*                                {menu.name}*/}
+                        {/*                            </Link> *!/*/}
+                        {/*                        </li>*/}
+                        {/*                    ))}*/}
+                        {/*                </ul>*/}
+                        {/*            </div>*/}
+                        {/*        ))}*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </li>
                     {/* End homepage menu items */}
 
@@ -72,38 +74,40 @@ const HeaderNavContent = () => {
                         } dropdown has-mega-menu`}
                         id="has-mega-menu"
                     >
-                        <span>Find Jobs</span>
-                        <div className="mega-menu">
-                            <div className="mega-menu-bar row">
-                                {findJobItems.map((item) => (
-                                    <div
-                                        className="column col-lg-3 col-md-3 col-sm-12"
-                                        key={item.id}
-                                    >
-                                        <h3>{item.title}</h3>
-                                        <ul>
-                                            {item.items.map((menu, i) => (
-                                                <li
-                                                    className={
-                                                        isActiveLink(
-                                                            menu.routePath,
-                                                            router.asPath
-                                                        )
-                                                            ? "current"
-                                                            : ""
-                                                    }
-                                                    key={i}
-                                                >
-                                                    <Link href={menu.routePath}>
-                                                        {menu.name}
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+                        <Link href='/job-list-v1'>
+                            <span>Find Jobs</span>
+                        </Link>
+                        {/*<div className="mega-menu">*/}
+                        {/*    <div className="mega-menu-bar row">*/}
+                        {/*        {findJobItems.map((item) => (*/}
+                        {/*            <div*/}
+                        {/*                className="column col-lg-3 col-md-3 col-sm-12"*/}
+                        {/*                key={item.id}*/}
+                        {/*            >*/}
+                        {/*                <h3>{item.title}</h3>*/}
+                        {/*                <ul>*/}
+                        {/*                    {item.items.map((menu, i) => (*/}
+                        {/*                        <li*/}
+                        {/*                            className={*/}
+                        {/*                                isActiveLink(*/}
+                        {/*                                    menu.routePath,*/}
+                        {/*                                    router.asPath*/}
+                        {/*                                )*/}
+                        {/*                                    ? "current"*/}
+                        {/*                                    : ""*/}
+                        {/*                            }*/}
+                        {/*                            key={i}*/}
+                        {/*                        >*/}
+                        {/*                            <Link href={menu.routePath}>*/}
+                        {/*                                {menu.name}*/}
+                        {/*                            </Link>*/}
+                        {/*                        </li>*/}
+                        {/*                    ))}*/}
+                        {/*                </ul>*/}
+                        {/*            </div>*/}
+                        {/*        ))}*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </li>
                     {/* End findjobs menu items */}
 
@@ -118,53 +122,55 @@ const HeaderNavContent = () => {
                         <span>Employers</span>
                         <ul>
                             {employerItems.map((item) => (
-                                <li className="dropdown" key={item.id}>
+                                <li key={item.id}>
                                     <span
                                         className={
-                                            isActiveParentChaild(
-                                                item.items,
+                                            isActiveLink(
+                                                item.routePath,
                                                 router.asPath
                                             )
                                                 ? "current"
                                                 : ""
                                         }
                                     >
+                                        <Link href={item.routePath}>
                                         {item.title}
+                                        </Link>
                                     </span>
-                                    <ul>
-                                        {item.items.map((menu, i) => (
-                                            <li
-                                                className={
-                                                    isActiveLink(
-                                                        menu.routePath,
-                                                        router.asPath
-                                                    )
-                                                        ? "current"
-                                                        : ""
-                                                }
-                                                key={i}
-                                            >
-                                                <Link href={menu.routePath}>
-                                                    {menu.name}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
+                                    {/*<ul>*/}
+                                    {/*    {item.items.map((menu, i) => (*/}
+                                    {/*        <li*/}
+                                    {/*            className={*/}
+                                    {/*                isActiveLink(*/}
+                                    {/*                    menu.routePath,*/}
+                                    {/*                    router.asPath*/}
+                                    {/*                )*/}
+                                    {/*                    ? "current"*/}
+                                    {/*                    : ""*/}
+                                    {/*            }*/}
+                                    {/*            key={i}*/}
+                                    {/*        >*/}
+                                    {/*            <Link href={menu.routePath}>*/}
+                                    {/*                {menu.name}*/}
+                                    {/*            </Link>*/}
+                                    {/*        </li>*/}
+                                    {/*    ))}*/}
+                                    {/*</ul>*/}
                                 </li>
                             ))}
                             <li
                                 className={
                                     isActiveLink(
-                                        "/employers-dashboard/dashboard",
+                                        "/employers-dashboard/company-profile",
                                         router.asPath
                                     )
                                         ? "current"
                                         : ""
                                 }
                             >
-                                {/* <Link href="/employers-dashboard/dashboard">
+                                <Link href="/employers-dashboard/company-profile">
                                     Employers Dashboard
-                                </Link> */}
+                                </Link>
                             </li>
                         </ul>
                     </li>

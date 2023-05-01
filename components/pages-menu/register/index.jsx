@@ -23,7 +23,7 @@ const index = () => {
         <div className="outer-box">
           {/* <!-- Login Form --> */}
           <div className="login-form default-form">
-            <Register />
+            <Register redirect />
           </div>
           {/* <!--End Login Form --> */}
         </div>
