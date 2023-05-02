@@ -45,7 +45,7 @@ const Header = () => {
 
           <div className="outer-box">
             <div className="d-flex align-items-center btn-box2">
-              <Link href="/employers-dashboard/company-profile" className="theme-btn btn-style-six upload-cv">
+              <Link href="/candidates-dashboard/my-profile" className="theme-btn btn-style-six upload-cv">
                 Upload your CV
               </Link>
               <a
