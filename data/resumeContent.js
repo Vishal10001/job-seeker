@@ -10,7 +10,7 @@ module.exports = {
         {
             institutionName: 'Harvard University',
             degree: 'Computer Science',
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. consectetur adipiscing elit. Proin a ipsum tellus. consectetur adipiscing elit. Proin a ipsum tellus.",
             startYear: '2008',
             endYear: '2012'
         }

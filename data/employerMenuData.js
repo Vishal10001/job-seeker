@@ -1,11 +1,11 @@
 module.exports = [
-  // {
-  //   id: 1,
-  //   name: "Dashboard",
-  //   icon: "la-home",
-  //   routePath: "/employers-dashboard/dashboard",
-  //   active: "active",
-  // },
+  {
+    id: 1,
+    name: "Dashboard",
+    icon: "la-home",
+    routePath: "/employers-dashboard/dashboard",
+    active: "active",
+  },
   {
     id: 2,
     name: "Company Profile",
@@ -20,27 +20,27 @@ module.exports = [
     routePath: "/employers-dashboard/post-jobs",
     active: "",
   },
-  // {
-  //   id: 4,
-  //   name: "Manage Jobs",
-  //   icon: "la-briefcase",
-  //   routePath: "/employers-dashboard/manage-jobs",
-  //   active: "",
-  // },
-  // {
-  //   id: 5,
-  //   name: "All Applicants",
-  //   icon: "la-file-invoice",
-  //   routePath: "/employers-dashboard/all-applicants",
-  //   active: "",
-  // },
-  // {
-  //   id: 6,
-  //   name: "Shortlisted Resumes",
-  //   icon: "la-bookmark-o",
-  //   routePath: "/employers-dashboard/shortlisted-resumes",
-  //   active: "",
-  // },
+  {
+    id: 4,
+    name: "Manage Jobs",
+    icon: "la-briefcase",
+    routePath: "/employers-dashboard/manage-jobs",
+    active: "",
+  },
+  {
+    id: 5,
+    name: "All Applicants",
+    icon: "la-file-invoice",
+    routePath: "/employers-dashboard/all-applicants",
+    active: "",
+  },
+  {
+    id: 6,
+    name: "Shortlisted Resumes",
+    icon: "la-bookmark-o",
+    routePath: "/employers-dashboard/shortlisted-resumes",
+    active: "",
+  },
   // {
   //   id: 7,
   //   name: "Packages",

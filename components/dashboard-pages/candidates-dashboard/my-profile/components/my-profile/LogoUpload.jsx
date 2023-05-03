@@ -1,6 +1,7 @@
-import { useState } from "react";
+import {useState} from "react";
 
-const LogoUpload = () => {
+const LogoUpload = (props) => {
+    const {accept, showWarning, title} = props;
     const [logImg, setLogoImg] = useState("");
     const logImgHander = (e) => {
         setLogoImg(e.target.files[0]);
@@ -13,7 +14,7 @@ const LogoUpload = () => {
                         className="uploadButton-input"
                         type="file"
                         name="attachments[]"
-                        accept="image/*"
+                        accept={`${accept ? accept : 'image/*'}`}
                         id="upload"
                         required
                         onChange={logImgHander}
@@ -22,14 +23,14 @@ const LogoUpload = () => {
                         className="uploadButton-button ripple-effect"
                         htmlFor="upload"
                     >
-                        {logImg !== "" ? logImg.name : "Browse Logo"}
+                        {logImg !== "" ? logImg.name : title ? title : "Browse Logo"}
                     </label>
                     <span className="uploadButton-file-name"></span>
                 </div>
-                <div className="text">
+                {!showWarning && <div className="text">
                     Max file size is 1MB, Minimum dimension: 330x300 And
                     Suitable files are .jpg & .png
-                </div>
+                </div>}
             </div>
         </>
     );

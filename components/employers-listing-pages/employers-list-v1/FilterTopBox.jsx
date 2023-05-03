@@ -107,9 +107,9 @@ const FilterTopBox = () => {
 
                     <div className="text">{company.jobDetails}</div>
 
-                    <button className="bookmark-btn">
-                        <span className="flaticon-bookmark"></span>
-                    </button>
+                    {/*<button className="bookmark-btn">*/}
+                    {/*    <span className="flaticon-bookmark"></span>*/}
+                    {/*</button>*/}
                 </div>
             </div>
         ));

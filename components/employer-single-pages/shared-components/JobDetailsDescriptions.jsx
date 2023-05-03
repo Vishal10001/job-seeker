@@ -20,9 +20,9 @@ const JobDetailsDescriptions = () => {
         divisions, Moody’s Investors Service, the rating agency, and Moody’s
         Analytics, with all of its other products.
       </p>
-      <div className="row images-outer">
-        <GalleryBox />
-      </div>
+      {/*<div className="row images-outer">*/}
+      {/*  <GalleryBox />*/}
+      {/*</div>*/}
       <p>
         Moody’s Corporation, often referred to as Moody’s, is an American
         business and financial services company. It is the holding company for

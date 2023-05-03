@@ -54,21 +54,43 @@ const Index = () => {
                     <Awards/>
                 </div>
 
-                <div className="switchbox-outer form-group col-lg-6 col-md-6">
-                    <label>Job type</label>
-                    <JobType className='w-fit-content'/>
-                </div>
+                {/* <!-- Input --> */}
+                <div className="form-group col-lg-12 col-md-12">
+                    <div className='row'>
+                        <div className="switchbox-outer form-group col-lg-3 col-md-6">
+                            <label>Job type</label>
+                            <JobType className='w-fit-content'/>
+                        </div>
 
-                <div className="switchbox-outer form-group col-lg-6 col-md-6">
-                    <label>Experience Level</label>
-                    <ExperienceLevel hideViewMore className='w-fit-content'/>
-                </div>
+                        <div className="switchbox-outer form-group col-lg-3 col-md-6">
+                            <label>Experience Level</label>
+                            <ExperienceLevel hideViewMore className='w-fit-content'/>
+                        </div>
+                        <div className="form-group col-lg-3 col-md-12">
+                            <label>Current Salary($)</label>
+                            <select className="chosen-single form-select" required>
+                                <option>40-70 K</option>
+                                <option>50-80 K</option>
+                                <option>60-90 K</option>
+                                <option>70-100 K</option>
+                                <option>100-150 K</option>
+                            </select>
+                        </div>
 
-                <div className="filter-block">
-                    <label>Salary</label>
-                    <SalaryRangeSlider/>
+                        {/* <!-- Input --> */}
+                        <div className="form-group col-lg-3 col-md-12">
+                            <label>Expected Salary($)</label>
+                            <select className="chosen-single form-select" required>
+                                <option>120-350 K</option>
+                                <option>40-70 K</option>
+                                <option>50-80 K</option>
+                                <option>60-90 K</option>
+                                <option>70-100 K</option>
+                                <option>100-150 K</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-
                 <div className="form-group col-lg-6 col-md-12">
                     <label>Skills </label>
                     <div className="d-flex align-items-center p-3 border-radius-6 bg-light-white">

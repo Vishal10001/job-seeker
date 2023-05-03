@@ -33,7 +33,7 @@ const Experiences = () => {
                                     </label>
                                 </div>
                                 <div className="edit-box">
-                                    <div className="info-box d-flex gap-2">
+                                    <div className="info-box flex-wrap d-flex gap-2">
                                         <div>
                                             <label><p className='mb-0'>Start Year</p></label>
                                             <select defaultValue={item?.startYear}

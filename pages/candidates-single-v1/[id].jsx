@@ -127,11 +127,11 @@ const CandidateSingleDynamicV1 = () => {
                   </p>
 
                   {/* <!-- Portfolio --> */}
-                  <div className="portfolio-outer">
-                    <div className="row">
-                      <GalleryBox />
-                    </div>
-                  </div>
+                  {/*<div className="portfolio-outer">*/}
+                  {/*  <div className="row">*/}
+                  {/*    <GalleryBox />*/}
+                  {/*  </div>*/}
+                  {/*</div>*/}
 
                   {/* <!-- Candidate Resume Start --> */}
                   {candidateResume.map((resume) => (
@@ -221,14 +221,14 @@ const CandidateSingleDynamicV1 = () => {
                   </div>
                   {/* End .sidebar-widget conadidate overview */}
 
-                  <div className="sidebar-widget social-media-widget">
-                    <h4 className="widget-title">Social media</h4>
-                    <div className="widget-content">
-                      <div className="social-links">
-                        <Social />
-                      </div>
-                    </div>
-                  </div>
+                  {/*<div className="sidebar-widget social-media-widget">*/}
+                  {/*  <h4 className="widget-title">Social media</h4>*/}
+                  {/*  <div className="widget-content">*/}
+                  {/*    <div className="social-links">*/}
+                  {/*      <Social />*/}
+                  {/*    </div>*/}
+                  {/*  </div>*/}
+                  {/*</div>*/}
                   {/* End .sidebar-widget social-media-widget */}
 
                   <div className="sidebar-widget">
