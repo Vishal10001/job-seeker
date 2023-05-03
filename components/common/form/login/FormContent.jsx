@@ -7,8 +7,8 @@ const FormContent = () => {
             {/* <!--Login Form--> */}
             <form method="post">
                 <div className="form-group">
-                    <label>Employer Name</label>
-                    <input type="text" name="username" placeholder="Employer Name" required/>
+                    <label>Employer Email</label>
+                    <input type="email" name="Email" placeholder="Employer Name" required/>
                 </div>
                 {/* name */}
 

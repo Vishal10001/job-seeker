@@ -1,9 +1,10 @@
-import { useDispatch, useSelector } from "react-redux";
-import { addExperience } from "../../../features/filter/filterSlice";
-import { experienceLavelCheck } from "../../../features/job/jobSlice";
+import {useDispatch, useSelector} from "react-redux";
+import {addExperience} from "../../../features/filter/filterSlice";
+import {experienceLavelCheck} from "../../../features/job/jobSlice";
 
-const ExperienceLevel = () => {
-    const { experienceLavel } = useSelector((state) => state.job) || {};
+const ExperienceLevel = (props) => {
+    const {hideViewMore, className} = props;
+    const {experienceLavel} = useSelector((state) => state.job) || {};
     const dispatch = useDispatch();
 
     // experience handler
@@ -13,7 +14,7 @@ const ExperienceLevel = () => {
     };
 
     return (
-        <ul className="switchbox">
+        <ul className={`switchbox ${className}`}>
             {experienceLavel?.map((item) => (
                 <li key={item.id}>
                     <label className="switch">
@@ -28,11 +29,11 @@ const ExperienceLevel = () => {
                     </label>
                 </li>
             ))}
-            <li>
+            {!hideViewMore && <li>
                 <button className="view-more">
                     <span className="icon flaticon-plus"></span> View More
                 </button>
-            </li>
+            </li>}
         </ul>
     );
 };

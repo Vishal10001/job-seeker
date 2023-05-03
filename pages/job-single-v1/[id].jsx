@@ -15,6 +15,7 @@ import MapJobFinder from "../../components/job-listing-pages/components/MapJobFi
 import SocialTwo from "../../components/job-single-pages/social/SocialTwo";
 import JobDetailsDescriptions from "../../components/job-single-pages/shared-components/JobDetailsDescriptions";
 import ApplyJobModalContent from "../../components/job-single-pages/shared-components/ApplyJobModalContent";
+import Link from "next/link";
 
 const JobSingleDynamicV1 = () => {
   const router = useRouter();
@@ -92,17 +93,19 @@ const JobSingleDynamicV1 = () => {
                 {/* End .content */}
 
                 <div className="btn-box">
-                  <a
-                    href="#"
-                    className="theme-btn btn-style-one"
-                    data-bs-toggle="modal"
-                    data-bs-target="#applyJobModal"
-                  >
+                  <Link className="theme-btn btn-style-one" href='/candidates-dashboard/my-resume?apply=true'>
+                  {/*<a*/}
+                  {/*  href="#"*/}
+                  {/*  className="theme-btn btn-style-one"*/}
+                  {/*  data-bs-toggle="modal"*/}
+                  {/*  data-bs-target="#applyJobModal"*/}
+                  {/*>*/}
                     Apply For Job
-                  </a>
-                  <button className="bookmark-btn">
-                    <i className="flaticon-bookmark"></i>
-                  </button>
+                  {/*</a>*/}
+                  </Link>
+                  {/*<button className="bookmark-btn">*/}
+                  {/*  <i className="flaticon-bookmark"></i>*/}
+                  {/*</button>*/}
                 </div>
                 {/* End apply for job btn */}
 
@@ -147,12 +150,12 @@ const JobSingleDynamicV1 = () => {
                 <JobDetailsDescriptions />
                 {/* End jobdetails content */}
 
-                <div className="other-options">
-                  <div className="social-share">
-                    <h5>Share this job</h5>
-                    <SocialTwo />
-                  </div>
-                </div>
+                {/*<div className="other-options">*/}
+                {/*  <div className="social-share">*/}
+                {/*    <h5>Share this job</h5>*/}
+                {/*    <SocialTwo />*/}
+                {/*  </div>*/}
+                {/*</div>*/}
                 {/* <!-- Other Options --> */}
 
                 <div className="related-jobs">

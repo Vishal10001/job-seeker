@@ -1,4 +1,4 @@
-/*** 
+/***
 
 ====================================================================
 Job Categories
@@ -353,7 +353,7 @@ Job Categories
   color: var(--primary-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 Job Section
@@ -546,7 +546,7 @@ Job Section
   margin-top: 20px;
 }
 
-/*** 
+/***
 
 ====================================================================
 Job Section Two
@@ -702,7 +702,7 @@ Job Section Two
   margin-top: 20px;
 }
 
-/*** 
+/***
 
 ====================================================================
 Job Section Three
@@ -846,7 +846,7 @@ Job Section Three
   flex-wrap: wrap;
 }
 
-/*** 
+/***
 
 ====================================================================
 Job Section Four
@@ -1032,7 +1032,7 @@ Job Section Four
   line-height: 22px;
 }
 
-/*** 
+/***
 
 ====================================================================
 Job Section Five
@@ -1227,7 +1227,7 @@ Job Section Five
   margin-bottom: 50px;
 }
 
-/*** 
+/***
 
 ====================================================================
 Job Section Six
@@ -1300,7 +1300,7 @@ Job Section Six
   margin-bottom: 0;
 }
 
-/*** 
+/***
 
 ====================================================================
 Job Detail Section
@@ -1695,6 +1695,7 @@ Job Detail Section
 .job-overview li {
   position: relative;
   padding-left: 50px;
+
   &:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1792,6 +1793,7 @@ Job Detail Section
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 1rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1801,8 +1803,8 @@ Job Detail Section
 
 .job-skills li {
   position: relative;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  //margin-right: 10px;
+  //margin-bottom: 10px;
 }
 
 .job-skills li a {

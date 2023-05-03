@@ -46,7 +46,7 @@ const Index = () => {
             <div className="col-xl-7 col-lg-12">
               {/* <!-- Graph widget --> */}
               <div className="graph-widget ls-widget">
-                <ProfileChart />
+                <ProfileChart widgetClass='w-100' />
               </div>
               {/* End profile chart */}
             </div>
@@ -56,14 +56,14 @@ const Index = () => {
               {/* <!-- Notification Widget --> */}
               <div className="notification-widget ls-widget">
                 <div className="widget-title">
-                  <h4>Notifications</h4>
+                  <h4>Replays</h4>
                 </div>
                 <div className="widget-content">
                   <Notification />
                 </div>
               </div>
             </div>
-            {/* End .col */}
+             End .col
 
             <div className="col-lg-12">
               {/* <!-- applicants Widget --> */}

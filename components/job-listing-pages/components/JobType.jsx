@@ -1,9 +1,10 @@
-import { useDispatch, useSelector } from "react-redux";
-import { addJobType } from "../../../features/filter/filterSlice";
-import { jobTypeCheck } from "../../../features/job/jobSlice";
+import {useDispatch, useSelector} from "react-redux";
+import {addJobType} from "../../../features/filter/filterSlice";
+import {jobTypeCheck} from "../../../features/job/jobSlice";
 
-const JobType = () => {
-    const { jobTypeList } = useSelector((state) => state.job) || {};
+const JobType = (props) => {
+    const {className} = props;
+    const {jobTypeList} = useSelector((state) => state.job) || {};
     const dispatch = useDispatch();
 
     // dispatch job-type
@@ -13,7 +14,7 @@ const JobType = () => {
     };
 
     return (
-        <ul className="switchbox">
+        <ul className={`switchbox ${className}`}>
             {jobTypeList?.map((item) => (
                 <li key={item.id}>
                     <label className="switch">
