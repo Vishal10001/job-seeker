@@ -113,6 +113,81 @@ const HeaderNavContent = () => {
 
                     <li
                         className={`${
+                            isActiveParent(candidateItems, router.asPath) ||
+                            router.asPath === "/candidates-dashboard/dashboard"
+                                ? "current"
+                                : ""
+                                    ? "current"
+                                    : ""
+                        } dropdown`}
+                    >
+                        <span>Candidates</span>
+                        <ul>
+                            <li
+                                className={
+                                    router.asPath ===
+                                    "/candidates-list"
+                                        ? "current"
+                                        : ""
+                                }
+                            >
+                                <Link href="/candidates-list">
+                                    Candidates List
+                                </Link>
+                            </li>
+                            {/*{candidateItems.map((item) => (*/}
+                            {/*    <li className="dropdown" key={item.id}>*/}
+                            {/*        <span*/}
+                            {/*            className={*/}
+                            {/*                isActiveParentChaild(*/}
+                            {/*                    item.items,*/}
+                            {/*                    router.asPath*/}
+                            {/*                )*/}
+                            {/*                    ? "current"*/}
+                            {/*                    : ""*/}
+                            {/*            }*/}
+                            {/*        >*/}
+                            {/*            {item.title}*/}
+                            {/*        </span>*/}
+                            {/*        <ul>*/}
+                            {/*            {item.items.map((menu, i) => (*/}
+                            {/*                <li*/}
+                            {/*                    className={*/}
+                            {/*                        isActiveLink(*/}
+                            {/*                            menu.routePath,*/}
+                            {/*                            router.asPath*/}
+                            {/*                        )*/}
+                            {/*                            ? "current"*/}
+                            {/*                            : ""*/}
+                            {/*                    }*/}
+                            {/*                    key={i}*/}
+                            {/*                >*/}
+                            {/*                    <Link href={menu.routePath}>*/}
+                            {/*                        {menu.name}*/}
+                            {/*                    </Link>*/}
+                            {/*                </li>*/}
+                            {/*            ))}*/}
+                            {/*        </ul>*/}
+                            {/*    </li>*/}
+                            {/*))}*/}
+                            <li
+                                className={
+                                    router.asPath ===
+                                    "/candidates-dashboard/dashboard"
+                                        ? "current"
+                                        : ""
+                                }
+                            >
+                                <Link href="/candidates-dashboard/dashboard">
+                                    Candidates Dashboard
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>
+                    {/* End Candidates menu items */}
+
+                    <li
+                        className={`${
                             isActiveParent(employerItems, router.asPath) ||
                             router.asPath === "/employers-dashboard/dashboard"
                                 ? "current"
@@ -175,69 +250,6 @@ const HeaderNavContent = () => {
                         </ul>
                     </li>
                     {/* End Employers menu items */}
-
-                    {/* <li
-                        className={`${
-                            isActiveParent(candidateItems, router.asPath) ||
-                            router.asPath === "/candidates-dashboard/dashboard"
-                                ? "current"
-                                : ""
-                                ? "current"
-                                : ""
-                        } dropdown`}
-                    >
-                        <span>Candidates</span>
-                        <ul>
-                            {candidateItems.map((item) => (
-                                <li className="dropdown" key={item.id}>
-                                    <span
-                                        className={
-                                            isActiveParentChaild(
-                                                item.items,
-                                                router.asPath
-                                            )
-                                                ? "current"
-                                                : ""
-                                        }
-                                    >
-                                        {item.title}
-                                    </span>
-                                    <ul>
-                                        {item.items.map((menu, i) => (
-                                            <li
-                                                className={
-                                                    isActiveLink(
-                                                        menu.routePath,
-                                                        router.asPath
-                                                    )
-                                                        ? "current"
-                                                        : ""
-                                                }
-                                                key={i}
-                                            >
-                                                <Link href={menu.routePath}>
-                                                    {menu.name}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </li>
-                            ))}
-                            <li
-                                className={
-                                    router.asPath ===
-                                    "/candidates-dashboard/dashboard"
-                                        ? "current"
-                                        : ""
-                                }
-                            >
-                                <Link href="/candidates-dashboard/dashboard">
-                                    Candidates Dashboard
-                                </Link>
-                            </li>
-                        </ul>
-                    </li> */}
-                    {/* End Candidates menu items */}
 
                     {/* <li
                         className={`${

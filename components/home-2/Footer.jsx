@@ -17,12 +17,12 @@ const Footer = () => {
                 </div>
                 <p className="phone-num">
                   <span>Call us </span>
-                  <a href="thebeehost@support.com">012 345 6789</a>
+                  <a href="support@resumerr.com">012 345 6789</a>
                 </p>
                 <p className="address">
-                  329 Queensberry Street, North Melbourne VIC
+                  123 ABC Street, XYZ Surat CITY
                   <br /> 3051, India. <br />
-                  <a href="mailto:support@superio.com" className="email">
+                  <a href="mailto:support@resumerr.com" className="email">
                     support@resumerr.com
                   </a>
                 </p>

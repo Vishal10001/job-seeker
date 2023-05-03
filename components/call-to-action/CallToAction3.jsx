@@ -16,7 +16,7 @@ const CallToAction3 = () => {
 
           <div className="btn-box">
             <Link
-              href="/job-list-v7"
+              href="/job-list-v1"
               className="theme-btn btn-style-one bg-blue"
             >
               <span className="btn-title">Search Job</span>

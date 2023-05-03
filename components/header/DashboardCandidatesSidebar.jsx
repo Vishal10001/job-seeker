@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import {CircularProgressbar, buildStyles} from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import candidatesuData from "../../data/candidatesMenuData";
-import { isActiveLink } from "../../utils/linkActiveChecker";
-import { useRouter } from "next/router";
-import { useDispatch, useSelector } from "react-redux";
-import { menuToggle } from "../../features/toggle/toggleSlice";
+import {isActiveLink} from "../../utils/linkActiveChecker";
+import {useRouter} from "next/router";
+import {useDispatch, useSelector} from "react-redux";
+import {menuToggle} from "../../features/toggle/toggleSlice";
 
 const DashboardCandidatesSidebar = () => {
-    const { menu } = useSelector((state) => state.toggle);
+    const {menu} = useSelector((state) => state.toggle);
     const percentage = 30;
     const router = useRouter();
 
@@ -33,7 +33,7 @@ const DashboardCandidatesSidebar = () => {
                     {candidatesuData.map((item) => (
                         <li
                             className={`${
-                                isActiveLink(item.routePath, router.asPath)
+                                isActiveLink(item.routePath, router.asPath, item?.alterRoutePath)
                                     ? "active"
                                     : ""
                             } mb-1`}
@@ -49,28 +49,28 @@ const DashboardCandidatesSidebar = () => {
                 </ul>
                 {/* End navigation */}
 
-                <div className="skills-percentage">
-                    <h4>Skills Percentage</h4>
-                    <p>
-                        `Put value for <strong>Cover Image</strong> field to
-                        increase your skill up to <strong>85%</strong>`
-                    </p>
-                    <div style={{ width: 200, height: 200, margin: "auto" }}>
-                        <CircularProgressbar
-                            background
-                            backgroundPadding={6}
-                            styles={buildStyles({
-                                backgroundColor: "#7367F0",
-                                textColor: "#fff",
-                                pathColor: "#fff",
-                                trailColor: "transparent",
-                            })}
-                            value={percentage}
-                            text={`${percentage}%`}
-                        />
-                    </div>{" "}
-                    {/* <!-- Pie Graph --> */}
-                </div>
+                {/*<div className="skills-percentage">*/}
+                {/*    <h4>Skills Percentage</h4>*/}
+                {/*    <p>*/}
+                {/*        `Put value for <strong>Cover Image</strong> field to*/}
+                {/*        increase your skill up to <strong>85%</strong>`*/}
+                {/*    </p>*/}
+                {/*    <div style={{ width: 200, height: 200, margin: "auto" }}>*/}
+                {/*        <CircularProgressbar*/}
+                {/*            background*/}
+                {/*            backgroundPadding={6}*/}
+                {/*            styles={buildStyles({*/}
+                {/*                backgroundColor: "#7367F0",*/}
+                {/*                textColor: "#fff",*/}
+                {/*                pathColor: "#fff",*/}
+                {/*                trailColor: "transparent",*/}
+                {/*            })}*/}
+                {/*            value={percentage}*/}
+                {/*            text={`${percentage}%`}*/}
+                {/*        />*/}
+                {/*    </div>{" "}*/}
+                {/*    /!* <!-- Pie Graph --> *!/*/}
+                {/*</div>*/}
             </div>
         </div>
     );

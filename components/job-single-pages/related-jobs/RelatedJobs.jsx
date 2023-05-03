@@ -46,9 +46,9 @@ const RelatedJobs = () => {
               </ul>
               {/* End .job-other-info */}
 
-              <button className="bookmark-btn">
-                <span className="flaticon-bookmark"></span>
-              </button>
+              {/*<button className="bookmark-btn">*/}
+              {/*  <span className="flaticon-bookmark"></span>*/}
+              {/*</button>*/}
             </div>
           </div>
         </div>
