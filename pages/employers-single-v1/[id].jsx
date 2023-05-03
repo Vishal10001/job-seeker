@@ -93,9 +93,9 @@ const EmployersSingleV1 = () => {
                   >
                     Private Message
                   </button>
-                  <button className="bookmark-btn">
-                    <i className="flaticon-bookmark"></i>
-                  </button>
+                  {/*<button className="bookmark-btn">*/}
+                  {/*  <i className="flaticon-bookmark"></i>*/}
+                  {/*</button>*/}
                 </div>
                 {/* End btn-box */}
 
@@ -208,7 +208,7 @@ const EmployersSingleV1 = () => {
 
                   <div className="sidebar-widget">
                     {/* <!-- Map Widget --> */}
-                    <h4 className="widget-title">Job Location</h4>
+                    <h4 className="widget-title">Company Location</h4>
                     <div className="widget-content">
                       <div style={{ height: "300px", width: "100%" }}>
                         <MapJobFinder />

@@ -16,11 +16,11 @@ const JobSkills = (props) => {
             {skills.map((skill, i) => (
                 <React.Fragment key={i}>
                     {showSlider ?
-                        <div className='d-inline-flex w-100 justify-content-between'>
-                            <li key={i} className={listClass}>
+                        <div className='row w-100 justify-content-between'>
+                            <li key={i} className={`${listClass} col-lg-3 col-md-12`}>
                                 <a className='h-fit-content cursor-default'>{skill}</a>
                             </li>
-                            <RangeSlider className='max-w-300 w-100'/>
+                            <RangeSlider className='max-w-300 col-lg-3 col-md-12 w-100'/>
                         </div>
                         :
                         <>
