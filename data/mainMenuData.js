@@ -116,8 +116,8 @@ export const findJobItems = [
 export const employerItems = [
     {
         id: 1,
-        title: "Employers List",
-        routePath: "/employers-list-v1",
+        title: "Candidates List",
+        routePath: "/candidates-list",
         // items: [
         //     {
         //         name: "Employers List",

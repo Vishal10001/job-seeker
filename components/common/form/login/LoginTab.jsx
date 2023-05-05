@@ -18,13 +18,7 @@ const LoginTab = (props) => {
 
                     <Tab className="col-lg-6 col-md-12">
                         <button className="theme-btn btn-style-four">
-                            <i className="la la-briefcase"></i> Employer
-                        </button>
-                    </Tab>
-
-                    <Tab className="col-lg-6 col-md-12">
-                        <button className="theme-btn btn-style-four">
-                            <i className="la la-briefcase"></i> Admin
+                            <i className="la la-briefcase"></i> Employer / Admin
                         </button>
                     </Tab>
                 </TabList>

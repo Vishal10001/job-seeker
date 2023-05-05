@@ -126,13 +126,13 @@ const HeaderNavContent = () => {
                             <li
                                 className={
                                     router.asPath ===
-                                    "/candidates-list"
+                                    "/employers-list-v1"
                                         ? "current"
                                         : ""
                                 }
                             >
-                                <Link href="/candidates-list">
-                                    Candidates List
+                                <Link href="/employers-list-v1">
+                                    Employers List
                                 </Link>
                             </li>
                             {/*{candidateItems.map((item) => (*/}
