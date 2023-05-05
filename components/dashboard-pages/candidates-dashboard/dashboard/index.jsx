@@ -56,14 +56,14 @@ const Index = () => {
               {/* <!-- Notification Widget --> */}
               <div className="notification-widget ls-widget">
                 <div className="widget-title">
-                  <h4>Replays</h4>
+                  <h4>Notification</h4>
                 </div>
                 <div className="widget-content">
                   <Notification />
                 </div>
               </div>
             </div>
-             End .col
+             {/*End .col*/}
 
             <div className="col-lg-12">
               {/* <!-- applicants Widget --> */}

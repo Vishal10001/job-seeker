@@ -13,14 +13,14 @@ module.exports = [
     routePath: "/candidates-dashboard/my-profile",
     active: "",
   },
-  {
-    id: 3,
-    name: "My Resume",
-    icon: "la la-file-invoice",
-    routePath: "/candidates-dashboard/my-resume",
-    alterRoutePath: "/candidates-dashboard/my-resume?apply=true",
-    active: "",
-  },
+  // {
+  //   id: 3,
+  //   name: "My Resume",
+  //   icon: "la la-file-invoice",
+  //   routePath: "/candidates-dashboard/my-resume",
+  //   alterRoutePath: "/candidates-dashboard/my-resume?apply=true",
+  //   active: "",
+  // },
   {
     id: 4,
     name: "Applied Jobs",
@@ -28,13 +28,13 @@ module.exports = [
     routePath: "/candidates-dashboard/applied-jobs",
     active: "",
   },
-  {
-    id: 5,
-    name: "Job Alerts",
-    icon: "la la-bell",
-    routePath: "/candidates-dashboard/job-alerts",
-    active: "",
-  },
+  // {
+  //   id: 5,
+  //   name: "Job Alerts",
+  //   icon: "la la-bell",
+  //   routePath: "/candidates-dashboard/job-alerts",
+  //   active: "",
+  // },
   // {
   //   id: 6,
   //   name: "Shortlisted Jobs",

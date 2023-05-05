@@ -21,6 +21,12 @@ const LoginTab = (props) => {
                             <i className="la la-briefcase"></i> Employer
                         </button>
                     </Tab>
+
+                    <Tab className="col-lg-6 col-md-12">
+                        <button className="theme-btn btn-style-four">
+                            <i className="la la-briefcase"></i> Admin
+                        </button>
+                    </Tab>
                 </TabList>
             </div>
             {/* End .form-group */}
@@ -34,6 +40,11 @@ const LoginTab = (props) => {
                 <EmployerForm/>
             </TabPanel>
             {/* End Employer Form */}
+
+            <TabPanel>
+                <EmployerForm isAdmin/>
+            </TabPanel>
+            {/* End Employer Form  for Admin*/}
         </Tabs>
         {/* End form-group */}
 
