@@ -1,14 +1,15 @@
 import Link from "next/link";
 import LoginWithSocial from "./LoginWithSocial";
 
-const FormContent = () => {
+const FormContent = (props) => {
+    const {isAdmin} = props;
     return (
         <div className="form-inner">
             {/* <!--Login Form--> */}
             <form method="post">
                 <div className="form-group">
-                    <label>Employer Email</label>
-                    <input type="email" name="Email" placeholder="Employer Name" required/>
+                    <label>{!isAdmin && 'Employer'} Email</label>
+                    <input type="email" name="Email" placeholder={`${isAdmin ? 'Admin' : 'Employer'} Name / Email`} required/>
                 </div>
                 {/* name */}
 

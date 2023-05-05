@@ -3,31 +3,31 @@ const TopCardBlock = () => {
     {
       id: 1,
       icon: "flaticon-briefcase",
-      countNumber: "22",
+      countNumber: "10000",
       metaName: "Posted Jobs",
       uiClass: "ui-blue",
     },
     {
       id: 2,
       icon: "la-file-invoice",
-      countNumber: "9382",
-      metaName: "Application",
+      countNumber: "7000",
+      metaName: "Open Jobs",
       uiClass: "ui-red",
     },
     {
       id: 3,
       icon: "la-comment-o",
-      countNumber: "74",
-      metaName: "Messages",
+      countNumber: "3000",
+      metaName: "Close Jobs",
       uiClass: "ui-yellow",
     },
-    {
-      id: 4,
-      icon: "la-bookmark-o",
-      countNumber: "32",
-      metaName: "Shortlist",
-      uiClass: "ui-green",
-    },
+    // {
+    //   id: 4,
+    //   icon: "la-bookmark-o",
+    //   countNumber: "32",
+    //   metaName: "Shortlist",
+    //   uiClass: "ui-green",
+    // },
   ];
 
   return (
