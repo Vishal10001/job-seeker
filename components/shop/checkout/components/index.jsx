@@ -19,7 +19,7 @@ const index = () => {
         {/* <!--End Order Box--> */}
 
         <div className="payment-box">
-          <PaymentOptions />
+          {/*<PaymentOptions />*/}
           {/* <!--Payment Options--> */}
         </div>
         {/* <!--End Payment Box--> */}
