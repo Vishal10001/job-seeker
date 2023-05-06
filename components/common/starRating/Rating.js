@@ -30,9 +30,9 @@ class Rating extends Component {
         this.handleMouseLeave = this.handleMouseLeave.bind(this);
     }
 
-    componentWillReceiveProps(newProps) {
-        newProps.starBlank && this.setState({dynamicValue: 0, value: 0});
-    }
+    // componentWillReceiveProps(newProps) {
+    //     newProps.starBlank && this.setState({dynamicValue: 0, value: 0});
+    // }
 
     handleClick(newValue) {
         this.props.removeValue && this.props.removeValue()
