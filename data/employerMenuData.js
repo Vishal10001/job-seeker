@@ -41,6 +41,13 @@ module.exports = [
     routePath: "/employers-dashboard/shortlisted-resumes",
     active: "",
   },
+  {
+    id: 7,
+    name: "Interview List",
+    icon: "la-briefcase",
+    routePath: "/employers-dashboard/interview-list",
+    active: "",
+  },
   // {
   //   id: 7,
   //   name: "Packages",
@@ -55,13 +62,13 @@ module.exports = [
   //   routePath: "/employers-dashboard/messages",
   //   active: "",
   // },
-  {
-    id: 9,
-    name: "Resume Alerts",
-    icon: "la-bell",
-    routePath: "/employers-dashboard/resume-alerts",
-    active: "",
-  },
+  // {
+  //   id: 9,
+  //   name: "Resume Alerts",
+  //   icon: "la-bell",
+  //   routePath: "/employers-dashboard/resume-alerts",
+  //   active: "",
+  // },
   {
     id: 10,
     name: "Change Password",

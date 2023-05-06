@@ -14,6 +14,8 @@ import GalleryBox from "../../components/candidates-single-pages/shared-componen
 import Social from "../../components/candidates-single-pages/social/Social";
 import JobSkills from "../../components/candidates-single-pages/shared-components/JobSkills";
 import AboutVideo from "../../components/candidates-single-pages/shared-components/AboutVideo";
+import AdminHeader from "../../components/header/AdminHeader";
+import AdminMobileMenu from "../../components/header/AdminMobileMenu";
 
 const CandidateSingleDynamicV1 = () => {
     const router = useRouter();
@@ -33,18 +35,14 @@ const CandidateSingleDynamicV1 = () => {
         <>
             <Seo pageTitle="Candidate Single Dyanmic V1"/>
 
-            {/* <!-- Header Span --> */}
-            <span className="header-span"></span>
-
+            <span className="header-span"/>
             <LoginPopup/>
             {/* End Login Popup Modal */}
 
-            <DefaulHeader/>
+            <AdminHeader/>
             {/* <!--End Main Header --> */}
 
-            <MobileMenu/>
-            {/* End MobileMenu */}
-
+            <AdminMobileMenu/>
             {/* <!-- Job Detail Section --> */}
             <section className="candidate-detail-section">
                 <div className="upper-box">
@@ -81,16 +79,9 @@ const CandidateSingleDynamicV1 = () => {
                                 </div>
 
                                 <div className="btn-box">
-                                    <a
-                                        className="theme-btn btn-style-one"
-                                        href="/images/sample.pdf"
-                                        download
-                                    >
-                                        Download CV
-                                    </a>
-                                    {/*<button className="bookmark-btn">*/}
-                                    {/*  <i className="flaticon-bookmark"></i>*/}
-                                    {/*</button>*/}
+                                    <Link className="bg-orange-600 btn-style-one" href='#'>
+                                        Remove
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -244,7 +235,7 @@ const CandidateSingleDynamicV1 = () => {
                                     </div>
                                     {fromEmployer && <div className='d-flex align-items-center justify-content-end'>
                                         <Link className='w-100'
-                                            href='/employers-dashboard/shortlisted-resumes'>
+                                              href='/employers-dashboard/shortlisted-resumes'>
                                             <button className="theme-btn w-100 btn-style-one">
                                                 Add To watchList
                                             </button>
@@ -272,8 +263,6 @@ const CandidateSingleDynamicV1 = () => {
             </section>
             {/* <!-- End Job Detail Section --> */}
 
-            <FooterDefault footerStyle="alternate5"/>
-            {/* <!-- End Main Footer --> */}
         </>
     );
 };

@@ -1,8 +1,9 @@
 export default [
-    {
-        id: 1,
-        label: "Home",
-        items: [
+    // {
+    //     id: 1,
+    //     label: "Home",
+    //     routePath:'/'
+        // items: [
             // {
             //     name: "Home Page 01",
             //     routePath: "/",
@@ -27,10 +28,10 @@ export default [
             //     name: "Home Page 06",
             //     routePath: "/home-6",
             // },
-            {
-                name: "Home Page",
-                routePath: "/home-7",
-            },
+            // {
+            //     name: "Home Page",
+            //     routePath: "/home-7",
+            // },
             // {
             //     name: "Home Page 08",
             //     routePath: "/home-8",
@@ -71,130 +72,130 @@ export default [
             //     name: "Home Page 17",
             //     routePath: "/home-17",
             // },
-        ],
-    },
+        // ],
+    // },
+    // {
+    //     id: 2,
+    //     label: "Job Listing",
+    //     items: [
+    //         {
+    //             name: "Job List",
+    //             routePath: "/job-list-v1",
+    //         },
+    //         // {
+    //         //     name: "Job List V2",
+    //         //     routePath: "/job-list-v2",
+    //         // },
+    //         // {
+    //         //     name: "Job List V3",
+    //         //     routePath: "/job-list-v3",
+    //         // },
+    //         // {
+    //         //     name: "Job List V4",
+    //         //     routePath: "/job-list-v4",
+    //         // },
+    //         // {
+    //         //     name: "Job List V5",
+    //         //     routePath: "/job-list-v5",
+    //         // },
+    //         // {
+    //         //     name: "Job List V6",
+    //         //     routePath: "/job-list-v6",
+    //         // },
+    //         // {
+    //         //     name: "Job List V7",
+    //         //     routePath: "/job-list-v7",
+    //         // },
+    //         // {
+    //         //     name: "Job List V8",
+    //         //     routePath: "/job-list-v8",
+    //         // },
+    //         // {
+    //         //     name: "Job List V9",
+    //         //     routePath: "/job-list-v9",
+    //         // },
+    //         // {
+    //         //     name: "Job List V10",
+    //         //     routePath: "/job-list-v10",
+    //         // },
+    //         // {
+    //         //     name: "Job List V11",
+    //         //     routePath: "/job-list-v11",
+    //         // },
+    //         // {
+    //         //     name: "Job List V12",
+    //         //     routePath: "/job-list-v12",
+    //         // },
+    //         // {
+    //         //     name: "Job List V13",
+    //         //     routePath: "/job-list-v13",
+    //         // },
+    //         // {
+    //         //     name: "Job List V14",
+    //         //     routePath: "/job-list-v14",
+    //         // },
+    //     ],
+    // },
+    // {
+    //     id: 3,
+    //     label: "Job Single",
+    //     items: [
+    //         {
+    //             name: "Job Single",
+    //             routePath: "/job-single-v1/1",
+    //         },
+    //         // {
+    //         //     name: "Job Single V2",
+    //         //     routePath: "/job-single-v2/2",
+    //         // },
+    //         // {
+    //         //     name: "Job Single V3",
+    //         //     routePath: "/job-single-v3/3",
+    //         // },
+    //         // {
+    //         //     name: "Job Single V4",
+    //         //     routePath: "/job-single-v4/4",
+    //         // },
+    //         // {
+    //         //     name: "Job Single V5",
+    //         //     routePath: "/job-single-v5/5",
+    //         // },
+    //     ],
+    // },
+    // {
+    //     id: 4,
+    //     label: "Employers List",
+    //     items: [
+    //         {
+    //             name: "Employers List",
+    //             routePath: "/employers-list-v1",
+    //         },
+    //         // {
+    //         //     name: "Employers List V2",
+    //         //     routePath: "/employers-list-v2",
+    //         // },
+    //         // {
+    //         //     name: "Employers List V3",
+    //         //     routePath: "/employers-list-v3",
+    //         // },
+    //         // {
+    //         //     name: "Employers List V4",
+    //         //     routePath: "/employers-list-v4",
+    //         // },
+    //     ],
+    // },
     {
-        id: 2,
-        label: "Job Listing",
-        items: [
-            {
-                name: "Job List",
-                routePath: "/job-list-v1",
-            },
-            // {
-            //     name: "Job List V2",
-            //     routePath: "/job-list-v2",
-            // },
-            // {
-            //     name: "Job List V3",
-            //     routePath: "/job-list-v3",
-            // },
-            // {
-            //     name: "Job List V4",
-            //     routePath: "/job-list-v4",
-            // },
-            // {
-            //     name: "Job List V5",
-            //     routePath: "/job-list-v5",
-            // },
-            // {
-            //     name: "Job List V6",
-            //     routePath: "/job-list-v6",
-            // },
-            // {
-            //     name: "Job List V7",
-            //     routePath: "/job-list-v7",
-            // },
-            // {
-            //     name: "Job List V8",
-            //     routePath: "/job-list-v8",
-            // },
-            // {
-            //     name: "Job List V9",
-            //     routePath: "/job-list-v9",
-            // },
-            // {
-            //     name: "Job List V10",
-            //     routePath: "/job-list-v10",
-            // },
-            // {
-            //     name: "Job List V11",
-            //     routePath: "/job-list-v11",
-            // },
-            // {
-            //     name: "Job List V12",
-            //     routePath: "/job-list-v12",
-            // },
-            // {
-            //     name: "Job List V13",
-            //     routePath: "/job-list-v13",
-            // },
-            // {
-            //     name: "Job List V14",
-            //     routePath: "/job-list-v14",
-            // },
-        ],
-    },
-    {
-        id: 3,
-        label: "Job Single",
-        items: [
-            {
-                name: "Job Single",
-                routePath: "/job-single-v1/1",
-            },
-            // {
-            //     name: "Job Single V2",
-            //     routePath: "/job-single-v2/2",
-            // },
-            // {
-            //     name: "Job Single V3",
-            //     routePath: "/job-single-v3/3",
-            // },
-            // {
-            //     name: "Job Single V4",
-            //     routePath: "/job-single-v4/4",
-            // },
-            // {
-            //     name: "Job Single V5",
-            //     routePath: "/job-single-v5/5",
-            // },
-        ],
-    },
-    {
-        id: 4,
+        id: 5,
         label: "Employers List",
         items: [
             {
-                name: "Employers List",
-                routePath: "/employers-list-v1",
+                name: "Candidates List",
+                routePath: "/candidates-list",
             },
-            // {
-            //     name: "Employers List V2",
-            //     routePath: "/employers-list-v2",
-            // },
-            // {
-            //     name: "Employers List V3",
-            //     routePath: "/employers-list-v3",
-            // },
-            // {
-            //     name: "Employers List V4",
-            //     routePath: "/employers-list-v4",
-            // },
-        ],
-    },
-    {
-        id: 5,
-        label: "Employers Single",
-        items: [
             {
-                name: "Employers Single",
-                routePath: "/employers-single-v1/1",
+                name: "Employers Dashboard",
+                routePath: "/employers-dashboard/company-profile",
             },
-            // {
-            //     name: "Employers Single V2",
-            //     routePath: "/employers-single-v2/2",
-            // },
             // {
             //     name: "Employers Single V3",
             //     routePath: "/employers-single-v3/3",
@@ -206,13 +207,13 @@ export default [
         label: "Candidates List",
         items: [
             {
-                name: "Candidates List",
-                routePath: "/candidates-list-v1",
+                name: "Employers List",
+                routePath: "/employers-list-v1",
             },
-            // {
-            //     name: "Candidates List V2",
-            //     routePath: "/candidates-list-v2",
-            // },
+            {
+                name: "Candidates Dashboard",
+                routePath: "/candidates-dashboard/dashboard",
+            },
             // {
             //     name: "Candidates List V3",
             //     routePath: "/candidates-list-v3",
@@ -227,24 +228,24 @@ export default [
             // },
         ],
     },
-    {
-        id: 7,
-        label: "Candidates Single",
-        items: [
-            {
-                name: "Candidates Single",
-                routePath: "/candidates-single-v1/1",
-            },
-            // {
-            //     name: "Candidates Single V2",
-            //     routePath: "/candidates-single-v2/2",
-            // },
-            // {
-            //     name: "Candidates Single V3",
-            //     routePath: "/candidates-single-v3/3",
-            // },
-        ],
-    },
+    // {
+    //     id: 7,
+    //     label: "Candidates Single",
+    //     items: [
+    //         {
+    //             name: "Candidates Single",
+    //             routePath: "/candidates-single-v1/1",
+    //         },
+    //         // {
+    //         //     name: "Candidates Single V2",
+    //         //     routePath: "/candidates-single-v2/2",
+    //         // },
+    //         // {
+    //         //     name: "Candidates Single V3",
+    //         //     routePath: "/candidates-single-v3/3",
+    //         // },
+    //     ],
+    // },
     // {
     //     id: 8,
     //     label: "Blog",

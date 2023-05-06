@@ -12,6 +12,8 @@ import RelatedJobs from "../../components/employer-single-pages/related-jobs/Rel
 import MapJobFinder from "../../components/job-listing-pages/components/MapJobFinder";
 import Social from "../../components/employer-single-pages/social/Social";
 import PrivateMessageBox from "../../components/employer-single-pages/shared-components/PrivateMessageBox";
+import AdminHeader from "../../components/header/AdminHeader";
+import AdminMobileMenu from "../../components/header/AdminMobileMenu";
 
 const EmployersSingleV1 = () => {
     const router = useRouter();
@@ -31,17 +33,14 @@ const EmployersSingleV1 = () => {
         <>
             <Seo pageTitle="Employers Single Dyanmic V1"/>
 
-            {/* <!-- Header Span --> */}
-            <span className="header-span"></span>
-
+            <span className="header-span"/>
             <LoginPopup/>
             {/* End Login Popup Modal */}
 
-            <DefaulHeader/>
+            <AdminHeader/>
             {/* <!--End Main Header --> */}
 
-            <MobileMenu/>
-            {/* End MobileMenu */}
+            <AdminMobileMenu/>
 
             {/* <!-- Job Detail Section --> */}
             <section className="job-detail-section">
@@ -144,22 +143,6 @@ const EmployersSingleV1 = () => {
                             <div className="content-column col-lg-8 col-md-12 col-sm-12">
                                 {/*  job-detail */}
                                 <JobDetailsDescriptions/>
-                                {/* End job-detail */}
-
-                                {/* <!-- Related Jobs --> */}
-                                <div className="related-jobs">
-                                    <div className="title-box">
-                                        <h3>3 Others jobs available</h3>
-                                        <div className="text">
-                                            2020 jobs live - 293 added today.
-                                        </div>
-                                    </div>
-                                    {/* End .title-box */}
-
-                                    <RelatedJobs/>
-                                    {/* End RelatedJobs */}
-                                </div>
-                                {/* <!-- Related Jobs --> */}
                             </div>
                             {/* End .content-column */}
 
@@ -233,7 +216,6 @@ const EmployersSingleV1 = () => {
             </section>
             {/* <!-- End Job Detail Section --> */}
 
-            <FooterDefault footerStyle="alternate5"/>
             {/* <!-- End Main Footer --> */}
         </>
     );

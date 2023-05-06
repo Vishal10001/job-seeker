@@ -1,7 +1,7 @@
 import Link from "next/link";
 import ListingShowing from "../components/ListingShowing";
 import companyData from "../../../data/topCompany";
-import { useDispatch, useSelector } from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {
     addCategory,
     addDestination,
@@ -12,7 +12,8 @@ import {
     addSort,
 } from "../../../features/filter/employerFilterSlice";
 
-const FilterTopBox = () => {
+const FilterTopBox = (props) => {
+    const {fromAdmin} = props;
     const {
         keyword,
         location,
@@ -45,7 +46,7 @@ const FilterTopBox = () => {
     const categoryFilter = (item) =>
         category !== ""
             ? item?.category?.toLocaleLowerCase() ===
-              category?.toLocaleLowerCase()
+            category?.toLocaleLowerCase()
             : item;
 
     // foundation date filter
@@ -71,11 +72,11 @@ const FilterTopBox = () => {
                     <div className="content">
                         <div className="content-inner">
                             <span className="company-logo">
-                                <img src={company.img} alt="company brand" />
+                                <img src={company.img} alt="company brand"/>
                             </span>
                             <h4>
                                 <Link
-                                    href={`employers-single-v1/${company.id}`}
+                                    href={fromAdmin ? `/view-employer/${company.id}` : `employers-single-v1/${company.id}?fromCandidate=true`}
                                 >
                                     {company.name}
                                 </Link>
@@ -129,11 +130,11 @@ const FilterTopBox = () => {
     const clearAll = () => {
         dispatch(addKeyword(""));
         dispatch(addLocation(""));
-        dispatch(addDestination({ min: 0, max: 100 }));
+        dispatch(addDestination({min: 0, max: 100}));
         dispatch(addCategory(""));
-        dispatch(addFoundationDate({ min: 1900, max: 2028 }));
+        dispatch(addFoundationDate({min: 1900, max: 2028}));
         dispatch(addSort(""));
-        dispatch(addPerPage({ start: 0, end: 0 }));
+        dispatch(addPerPage({start: 0, end: 0}));
     };
 
     return (
@@ -225,7 +226,7 @@ const FilterTopBox = () => {
 
             {content}
 
-            <ListingShowing />
+            <ListingShowing/>
             {/* <!-- Listing Show More --> */}
         </>
     );

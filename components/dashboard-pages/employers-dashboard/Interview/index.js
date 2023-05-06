@@ -3,17 +3,16 @@ import DashboardHeader from "../../../header/DashboardHeader";
 import LoginPopup from "../../../common/form/login/LoginPopup";
 import DashboardEmployerSidebar from "../../../header/DashboardEmployerSidebar";
 import BreadCrumb from "../../BreadCrumb";
-import TopCardBlock from "./components/TopCardBlock";
-import ProfileChart from "./components/ProfileChart";
-import Notification from "./components/Notification";
 import Applicants from "./components/Applicants";
 import CopyrightFooter from "../../CopyrightFooter";
 import MenuToggler from "../../MenuToggler";
+import FeedbackForm from "./components/FeedbackForm";
 
-const Index = () => {
+const Index = (props) => {
+    const {fromFeedback} = props;
     return (
         <div className="page-wrapper dashboard">
-            <span className="header-span"></span>
+            <span className="header-span"/>
             {/* <!-- Header Span for hight --> */}
 
             <LoginPopup/>
@@ -32,15 +31,10 @@ const Index = () => {
             <section className="user-dashboard">
                 <div className="dashboard-outer">
                     <MenuToggler/>
-                    <BreadCrumb title="Dashboard Home!"/>
+                    {/* Collapsible sidebar button */}
+                    <BreadCrumb title={fromFeedback ? "Feedback!" : "Interviews List!"}/>
                     {/* breadCrumb */}
 
-                    {/* Collapsible sidebar button */}
-
-                    <div className="row">
-                        <TopCardBlock/>
-                    </div>
-                    {/* End .row top card block */}
 
                     <div className="row">
                         {/*<div className="col-xl-7 col-lg-12">*/}
@@ -69,13 +63,13 @@ const Index = () => {
                             {/* <!-- applicants Widget --> */}
                             <div className="applicants-widget ls-widget">
                                 <div className="widget-title">
-                                    <h4>Recent Applicants</h4>
+                                    <h4>{fromFeedback ? 'Feedback' : `All Interview's List`}</h4>
                                 </div>
                                 <div className="widget-content">
                                     <div className="row">
                                         {/* <!-- Candidate block three --> */}
 
-                                        <Applicants/>
+                                        {fromFeedback ? <FeedbackForm/> : <Applicants/>}
                                     </div>
                                 </div>
                             </div>

@@ -62,7 +62,7 @@ const FilterSidebar = () => {
             </div>
             {/* Filter Outer */}
 
-            <CallToActions />
+            {/*<CallToActions />*/}
             {/* <!-- End Call To Action --> */}
         </div>
     );

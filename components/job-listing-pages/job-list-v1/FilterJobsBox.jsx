@@ -1,6 +1,6 @@
 import Link from "next/link";
 import jobs from "../../../data/job-featured";
-import { useDispatch, useSelector } from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {
     addCategory,
     addDatePosted,
@@ -20,8 +20,9 @@ import {
     clearJobTypeToggle,
 } from "../../../features/job/jobSlice";
 
-const FilterJobsBox = () => {
-    const { jobList, jobSort } = useSelector((state) => state.filter);
+const FilterJobsBox = (props) => {
+    const {fromAdmin} = props;
+    const {jobList, jobSort} = useSelector((state) => state.filter);
     const {
         keyword,
         location,
@@ -34,7 +35,7 @@ const FilterJobsBox = () => {
         tag,
     } = jobList || {};
 
-    const { sort, perPage } = jobSort;
+    const {sort, perPage} = jobSort;
 
     const dispatch = useDispatch();
 
@@ -42,16 +43,16 @@ const FilterJobsBox = () => {
     const keywordFilter = (item) =>
         keyword !== ""
             ? item.jobTitle
-                  .toLocaleLowerCase()
-                  .includes(keyword.toLocaleLowerCase())
+                .toLocaleLowerCase()
+                .includes(keyword.toLocaleLowerCase())
             : item;
 
     // location filter
     const locationFilter = (item) =>
         location !== ""
             ? item?.location
-                  ?.toLocaleLowerCase()
-                  .includes(location?.toLocaleLowerCase())
+                ?.toLocaleLowerCase()
+                .includes(location?.toLocaleLowerCase())
             : item;
 
     // location filter
@@ -63,36 +64,36 @@ const FilterJobsBox = () => {
     const categoryFilter = (item) =>
         category !== ""
             ? item?.category?.toLocaleLowerCase() ===
-              category?.toLocaleLowerCase()
+            category?.toLocaleLowerCase()
             : item;
 
     // job-type filter
     const jobTypeFilter = (item) =>
         jobType?.length !== 0 && item?.jobType !== undefined
             ? jobType?.includes(
-                  item?.jobType[0]?.type
-                      .toLocaleLowerCase()
-                      .split(" ")
-                      .join("-")
-              )
+            item?.jobType[0]?.type
+                .toLocaleLowerCase()
+                .split(" ")
+                .join("-")
+            )
             : item;
 
     // date-posted filter
     const datePostedFilter = (item) =>
         datePosted !== "all" && datePosted !== ""
             ? item?.created_at
-                  ?.toLocaleLowerCase()
-                  .split(" ")
-                  .join("-")
-                  .includes(datePosted)
+                ?.toLocaleLowerCase()
+                .split(" ")
+                .join("-")
+                .includes(datePosted)
             : item;
 
     // experience level filter
     const experienceFilter = (item) =>
         experience?.length !== 0
             ? experience?.includes(
-                  item?.experience?.split(" ").join("-").toLocaleLowerCase()
-              )
+            item?.experience?.split(" ").join("-").toLocaleLowerCase()
+            )
             : item;
 
     // salary filter
@@ -124,10 +125,10 @@ const FilterJobsBox = () => {
                 <div className="inner-box">
                     <div className="content">
                         <span className="company-logo">
-                            <img src={item.logo} alt="item brand" />
+                            <img src={item.logo} alt="item brand"/>
                         </span>
                         <h4>
-                            <Link href={`/job-single-v1/${item.id}`}>
+                            <Link href={fromAdmin ? `/view-job/${item.id}` : `/job-single-v1/${item.id}`}>
                                 {item.jobTitle}
                             </Link>
                         </h4>
@@ -189,7 +190,7 @@ const FilterJobsBox = () => {
     const clearAll = () => {
         dispatch(addKeyword(""));
         dispatch(addLocation(""));
-        dispatch(addDestination({ min: 0, max: 100 }));
+        dispatch(addDestination({min: 0, max: 100}));
         dispatch(addCategory(""));
         dispatch(clearJobType());
         dispatch(clearJobTypeToggle());
@@ -197,10 +198,10 @@ const FilterJobsBox = () => {
         dispatch(clearDatePostToggle());
         dispatch(clearExperience());
         dispatch(clearExperienceToggle());
-        dispatch(addSalary({ min: 0, max: 20000 }));
+        dispatch(addSalary({min: 0, max: 20000}));
         dispatch(addTag(""));
         dispatch(addSort(""));
-        dispatch(addPerPage({ start: 0, end: 0 }));
+        dispatch(addPerPage({start: 0, end: 0}));
     };
 
     return (
@@ -243,7 +244,7 @@ const FilterJobsBox = () => {
                         <button
                             onClick={clearAll}
                             className="btn btn-danger text-nowrap me-2"
-                            style={{ minHeight: "45px", marginBottom: "15px" }}
+                            style={{minHeight: "45px", marginBottom: "15px"}}
                         >
                             Clear All
                         </button>
@@ -307,7 +308,7 @@ const FilterJobsBox = () => {
             <div className="ls-show-more">
                 <p>Show 36 of 497 Jobs</p>
                 <div className="bar">
-                    <span className="bar-inner" style={{ width: "40%" }}></span>
+                    <span className="bar-inner" style={{width: "40%"}}></span>
                 </div>
                 <button className="show-more">Show More</button>
             </div>

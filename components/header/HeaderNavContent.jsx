@@ -4,7 +4,7 @@ import {
     candidateItems,
     employerItems,
     findJobItems,
-    homeItems,
+    homeItems, masterAdmin,
     pageItems,
     shopItems,
 } from "../../data/mainMenuData";
@@ -251,6 +251,18 @@ const HeaderNavContent = () => {
                     </li>
                     {/* End Employers menu items */}
 
+                    <li
+                        className={`${
+                            isActiveParent(masterAdmin, router.asPath)
+                                ? "current"
+                                : ""
+                        } dropdown has-mega-menu`}
+                        id="has-mega-menu"
+                    >
+                        <Link href='/admin-job-list'>
+                            <span>Master Admin</span>
+                        </Link>
+                    </li>
                     {/* <li
                         className={`${
                             isActiveParentChaild(blogItems, router.asPath)

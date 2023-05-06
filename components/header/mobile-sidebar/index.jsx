@@ -15,9 +15,10 @@ import {
     isActiveLink,
     isActiveParentChaild,
 } from "../../../utils/linkActiveChecker";
-import { useRouter } from "next/router";
+import {useRouter} from "next/router";
 
-const Index = () => {
+const Index = (props) => {
+    const {fromAdmin} = props;
     const router = useRouter();
 
     return (
@@ -27,50 +28,129 @@ const Index = () => {
             id="offcanvasMenu"
             data-bs-scroll="true"
         >
-            <SidebarHeader />
+            <SidebarHeader/>
             {/* End pro-header */}
 
             <ProSidebarProvider>
                 <Sidebar>
                     <Menu>
-                        {mobileMenuData.map((item) => (
-                            <SubMenu
-                                className={
-                                    isActiveParentChaild(
-                                        item.items,
-                                        router.asPath
-                                    )
-                                        ? "menu-active"
-                                        : ""
-                                }
-                                label={item.label}
-                                key={item.id}
-                            >
-                                {item.items.map((menuItem, i) => (
-                                    <MenuItem
+                        {fromAdmin ?
+                            <>
+                                <MenuItem
+                                    className={
+                                        isActiveLink(
+                                            '/admin-job-list',
+                                            router.asPath
+                                        )
+                                            ? "menu-active-link"
+                                            : ""
+                                    }
+                                    routerLink={
+                                        <Link href='/admin-job-list'/>
+                                    }
+                                >
+                                    All Jobs
+                                </MenuItem>
+                                <MenuItem
+                                    className={
+                                        isActiveLink(
+                                            '/admin-candidate-list',
+                                            router.asPath
+                                        )
+                                            ? "menu-active-link"
+                                            : ""
+                                    }
+                                    routerLink={
+                                        <Link href='/admin-candidate-list'/>
+                                    }
+                                >
+                                    All Candidate
+                                </MenuItem>
+                                <MenuItem
+                                    className={
+                                        isActiveLink(
+                                            '/admin-employer-list',
+                                            router.asPath
+                                        )
+                                            ? "menu-active-link"
+                                            : ""
+                                    }
+                                    routerLink={
+                                        <Link href='/admin-employer-list'/>
+                                    }
+                                >
+                                    All Employer
+                                </MenuItem>
+                            </> :
+                            <>
+                                <MenuItem
+                                    className={
+                                        isActiveLink(
+                                            '/',
+                                            router.asPath
+                                        )
+                                            ? "menu-active-link"
+                                            : ""
+                                    }
+                                    routerLink={
+                                        <Link href='/'/>
+                                    }
+                                >
+                                    Home
+                                </MenuItem>
+                                <MenuItem
+                                    className={
+                                        isActiveLink(
+                                            '/job-list-v1',
+                                            router.asPath
+                                        )
+                                            ? "menu-active-link"
+                                            : ""
+                                    }
+                                    routerLink={
+                                        <Link href='/job-list-v1'/>
+                                    }
+                                >
+                                    Find Jobs
+                                </MenuItem>
+                                {mobileMenuData.map((item) => (
+                                    <SubMenu
                                         className={
-                                            isActiveLink(
-                                                menuItem.routePath,
+                                            isActiveParentChaild(
+                                                item.items,
                                                 router.asPath
                                             )
-                                                ? "menu-active-link"
+                                                ? "menu-active"
                                                 : ""
                                         }
-                                        key={i}
-                                        routerLink={
-                                            <Link href={menuItem.routePath} />
-                                        }
+                                        label={item.label}
+                                        key={item.id}
                                     >
-                                        {menuItem.name}
-                                    </MenuItem>
+                                        {item?.items?.length && item.items.map((menuItem, i) => (
+                                            <MenuItem
+                                                className={
+                                                    isActiveLink(
+                                                        menuItem.routePath,
+                                                        router.asPath
+                                                    )
+                                                        ? "menu-active-link"
+                                                        : ""
+                                                }
+                                                key={i}
+                                                routerLink={
+                                                    <Link href={menuItem.routePath}/>
+                                                }
+                                            >
+                                                {menuItem.name}
+                                            </MenuItem>
+                                        ))}
+                                    </SubMenu>
                                 ))}
-                            </SubMenu>
-                        ))}
+                            </>}
                     </Menu>
                 </Sidebar>
             </ProSidebarProvider>
-
-            <SidebarFooter />
+            {!fromAdmin && <SidebarFooter/>}
         </div>
     );
 };

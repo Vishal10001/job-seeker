@@ -1,7 +1,7 @@
 import Link from "next/link";
 import ListingShowing from "../components/ListingShowing";
 import candidatesData from "../../../data/candidates";
-import { useDispatch, useSelector } from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {
     addCandidateGender,
     addCategory,
@@ -20,7 +20,8 @@ import {
     clearQualification,
 } from "../../../features/candidate/candidateSlice";
 
-const FilterTopBox = () => {
+const FilterTopBox = (props) => {
+    const {fromAdmin} = props;
     const {
         keyword,
         location,
@@ -57,40 +58,40 @@ const FilterTopBox = () => {
     const categoryFilter = (item) =>
         category !== ""
             ? item?.category?.toLocaleLowerCase() ===
-              category?.toLocaleLowerCase()
+            category?.toLocaleLowerCase()
             : item;
 
     // gender filter
     const genderFilter = (item) =>
         candidateGender !== ""
             ? item?.gender.toLocaleLowerCase() ===
-                  candidateGender.toLocaleLowerCase() && item
+            candidateGender.toLocaleLowerCase() && item
             : item;
 
     // date-posted filter
     const datePostedFilter = (item) =>
         datePost !== "all" && datePost !== ""
             ? item?.created_at
-                  ?.toLocaleLowerCase()
-                  .split(" ")
-                  .join("-")
-                  .includes(datePost)
+                ?.toLocaleLowerCase()
+                .split(" ")
+                .join("-")
+                .includes(datePost)
             : item;
 
     // experience filter
     const experienceFilter = (item) =>
         experiences?.length !== 0
             ? experiences?.includes(
-                  item?.experience?.split(" ").join("-").toLocaleLowerCase()
-              )
+            item?.experience?.split(" ").join("-").toLocaleLowerCase()
+            )
             : item;
 
     // qualification filter
     const qualificationFilter = (item) =>
         qualifications?.length !== 0
             ? qualifications?.includes(
-                  item?.qualification?.split(" ").join("-").toLocaleLowerCase()
-              )
+            item?.qualification?.split(" ").join("-").toLocaleLowerCase()
+            )
             : item;
 
     // sort filter
@@ -113,11 +114,11 @@ const FilterTopBox = () => {
                 <div className="inner-box">
                     <div className="content">
                         <figure className="image">
-                            <img src={candidate.avatar} alt="candidates" />
+                            <img src={candidate.avatar} alt="candidates"/>
                         </figure>
                         <h4 className="name">
                             <Link
-                                href={`/candidates-single-v1/${candidate.id}`}
+                                href={fromAdmin ? `/view-candidate/${candidate.id}` : `/candidates-single-v1/${candidate.id}`}
                             >
                                 {candidate.name}
                             </Link>
@@ -149,13 +150,13 @@ const FilterTopBox = () => {
                     {/* End content */}
 
                     <div className="btn-box">
-                        <button className="bookmark-btn me-2">
-                            <span className="flaticon-bookmark"></span>
-                        </button>
+                        {/*<button className="bookmark-btn me-2">*/}
+                        {/*    <span className="flaticon-bookmark"></span>*/}
+                        {/*</button>*/}
                         {/* End bookmark-btn */}
 
                         <Link
-                            href={`/candidates-single-v1/${candidate.id}`}
+                            href={fromAdmin ? `/view-candidate/${candidate.id}` : `/candidates-single-v1/${candidate.id}`}
                             className="theme-btn btn-style-three"
                         >
                             <span className="btn-title">View Profile</span>
@@ -181,7 +182,7 @@ const FilterTopBox = () => {
     const clearHandler = () => {
         dispatch(addKeyword(""));
         dispatch(addLocation(""));
-        dispatch(addDestination({ min: 0, max: 100 }));
+        dispatch(addDestination({min: 0, max: 100}));
         dispatch(addCategory(""));
         dispatch(addCandidateGender(""));
         dispatch(addDatePost(""));
@@ -191,13 +192,13 @@ const FilterTopBox = () => {
         dispatch(clearQualification());
         dispatch(clearQualificationF());
         dispatch(addSort(""));
-        dispatch(addPerPage({ start: 0, end: 0 }));
+        dispatch(addPerPage({start: 0, end: 0}));
     };
 
     return (
         <>
             <div className="ls-switcher">
-                <div className="showing-result">
+                <div className="showing-result d-flex justify-content-between">
                     <div className="show-1023">
                         <button
                             type="button"
@@ -231,7 +232,7 @@ const FilterTopBox = () => {
                     perPage?.end !== 0 ? (
                         <button
                             className="btn btn-danger text-nowrap me-2"
-                            style={{ minHeight: "45px", marginBottom: "15px" }}
+                            style={{minHeight: "45px", marginBottom: "15px"}}
                             onClick={clearHandler}
                         >
                             Clear All
@@ -294,7 +295,7 @@ const FilterTopBox = () => {
 
             {content}
 
-            <ListingShowing />
+            <ListingShowing/>
             {/* <!-- Listing Show More --> */}
         </>
     );

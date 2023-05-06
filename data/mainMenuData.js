@@ -10,6 +10,46 @@ export const homeItems = [
     }
 ];
 
+export const masterAdmin = [
+    {
+        id: 1,
+        items: [
+            {
+                name: "Master Admin",
+                routePath: "/admin-job-list",
+            },
+        ]
+    }
+];
+
+export const masterAdminJobs = [{
+    id: 1,
+    items: [
+        {
+            name: "All Jobs",
+            routePath: "/admin-job-list",
+        },
+    ]
+}];
+export const masterAdminCandidate = [{
+    id: 1,
+    items: [
+        {
+            name: "All Candidates",
+            routePath: "/admin-candidate-list",
+        },
+    ]
+}];
+export const masterAdminEmployer = [{
+    id: 1,
+    items: [
+        {
+            name: "All Employers",
+            routePath: "/admin-employer-list",
+        },
+    ]
+}];
+
 export const findJobItems = [
     {
         id: 1,
