@@ -22,7 +22,7 @@ const Register = (props) => {
 
                         <Tab className="col-lg-6 col-md-12">
                             <button className="theme-btn btn-style-four">
-                                <i className="la la-briefcase"></i> Employer / Admin
+                                <i className="la la-briefcase"></i> Employer
                             </button>
                         </Tab>
                     </TabList>

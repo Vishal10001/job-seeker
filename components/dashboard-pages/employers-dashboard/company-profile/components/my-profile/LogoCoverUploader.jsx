@@ -41,7 +41,7 @@ const LogoCoverUploader = () => {
                 </div>
             </div>
 
-            <div className="uploading-outer">
+            {/* <div className="uploading-outer">
                 <div className="uploadButton">
                     <input
                         className="uploadButton-input"
@@ -63,7 +63,7 @@ const LogoCoverUploader = () => {
                     Max file size is 1MB, Minimum dimension: 330x300 And
                     Suitable files are .jpg & .png
                 </div>
-            </div>
+            </div> */}
         </>
     );
 };

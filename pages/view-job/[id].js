@@ -146,14 +146,14 @@ const JobSingleDynamicV1 = () => {
                                         <JobOverView/>
 
                                         {/* <!-- Map Widget --> */}
-                                        <h4 className="widget-title">Job Location</h4>
+                                        {/* <h4 className="widget-title">Job Location</h4>
                                         <div className="widget-content">
                                             <div className="map-outer">
                                                 <div style={{height: "300px", width: "100%"}}>
                                                     <MapJobFinder/>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         {/* <!--  Map Widget --> */}
 
                                         <h4 className="widget-title">Job Skills</h4>

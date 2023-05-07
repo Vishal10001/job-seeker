@@ -13,7 +13,7 @@ const FilterSidebar = () => {
             <div className="filters-outer">
                 <button
                     type="button"
-                    className="btn-close text-reset close-filters show-1023"
+                    className="btn-close text-reset close-filters show-1023-1"
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
                 ></button>

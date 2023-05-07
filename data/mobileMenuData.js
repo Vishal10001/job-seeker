@@ -186,10 +186,10 @@ export default [
     // },
     {
         id: 5,
-        label: "Employers List",
+        label: "Employer",
         items: [
             {
-                name: "Candidates List",
+                name: "Candidate List",
                 routePath: "/candidates-list",
             },
             {
@@ -204,7 +204,7 @@ export default [
     },
     {
         id: 6,
-        label: "Candidates List",
+        label: "Candidate",
         items: [
             {
                 name: "Employers List",

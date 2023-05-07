@@ -48,6 +48,7 @@ Banner Section
   background-position: center;
   background-size: cover;
   content: "";
+  filter: brightness(2) !important;
 }
 
 .banner-section-two .content-column {

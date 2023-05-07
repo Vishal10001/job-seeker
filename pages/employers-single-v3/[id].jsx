@@ -116,16 +116,16 @@ const EmployersSingleV3 = () => {
                   </div>
                   {/* End company-widget */}
 
-                  <div className="sidebar-widget">
+                  {/* <div className="sidebar-widget"> */}
                     {/* <!-- Map Widget --> */}
-                    <h4 className="widget-title">Job Location</h4>
+                    {/* <h4 className="widget-title">Job Location</h4>
                     <div className="widget-content">
                       <div style={{ height: "300px", width: "100%" }}>
                         <MapJobFinder />
                       </div>
-                    </div>
+                    </div> */}
                     {/* <!--  Map Widget --> */}
-                  </div>
+                  {/* </div> */}
                   {/* End sidebar-widget */}
 
                   <div className="sidebar-widget contact-widget mb-0">

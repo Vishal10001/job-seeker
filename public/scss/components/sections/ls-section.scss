@@ -49,6 +49,7 @@ Listing Section  (Ls Section)
   overflow-y: auto !important;
   transition: all 300ms ease;
 }
+
 .filter_sidebar-active {
   position: fixed;
   left: 0;
@@ -70,9 +71,11 @@ Listing Section  (Ls Section)
 .ls-section .filters-column::-webkit-scrollbar {
   width: 5px;
 }
+
 .ls-section .filters-column::-webkit-scrollbar-track {
   background: transparent;
 }
+
 .ls-section .filters-column::-webkit-scrollbar-thumb {
   background-color: rgba(112, 112, 112, 0.5);
   border-radius: 10px;
@@ -90,8 +93,33 @@ Listing Section  (Ls Section)
   visibility: visible;
 }
 
+.show-1023-1 {
+  display: none !important;
+
+  @media (max-width: 1023px) {
+    display: block !important;
+    order: 2;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 575px) {
+    margin-left: 0;
+  }
+}
+
 .show-1023 {
   display: none;
+
+  @media (max-width: 1366px) {
+    display: block;
+    order: 2;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
   @media (max-width: 1023px) {
     display: block;
     order: 2;
@@ -99,10 +127,12 @@ Listing Section  (Ls Section)
     margin-right: 0;
     margin-bottom: 15px;
   }
+
   @media (max-width: 575px) {
     margin-left: 0;
   }
 }
+
 .ls-switcher {
   @media (max-width: 575px) {
     .text {
@@ -110,14 +140,17 @@ Listing Section  (Ls Section)
     }
   }
 }
+
 @media (max-width: 1023px) {
   .showing-result .text {
     margin-bottom: 15px;
   }
+
   .hidden-1023 {
     display: none;
   }
 }
+
 .ls-section .toggle-filters .icon {
   display: inline-block;
   height: 10px;
@@ -335,6 +368,7 @@ Ls Outer
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 30px;
+
   @media (max-width: 767px) {
     justify-content: center;
   }
@@ -455,20 +489,25 @@ Ls Outer
   min-width: 146px;
   margin-left: 10px;
   margin-bottom: 15px;
+
   @media (max-width: 599px) {
     min-width: 150px;
+
     &:first-child {
       margin-left: 0;
     }
   }
 }
+
 .ls-switcher .sort-by {
   @media (max-width: 599px) {
     flex-wrap: wrap;
     width: 100%;
+
     .chosen-single {
       margin-left: 0 !important;
     }
+
     .btn.me-2 {
       width: 100%;
       margin-right: 0 !important;
@@ -476,6 +515,7 @@ Ls Outer
     }
   }
 }
+
 .ls-switcher .sort-by .chosen-container {
   margin-left: 10px;
 }
@@ -683,6 +723,7 @@ Listing Section / style Two
   padding: 50px 60px;
   margin-bottom: 0;
   height: 100%;
+
   @media (max-width: 1023px) {
     padding: 30px 30px 10px;
   }
