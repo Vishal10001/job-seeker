@@ -15,10 +15,10 @@ import {
     isActiveLink,
     isActiveParentChaild,
 } from "../../../utils/linkActiveChecker";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
 const Index = (props) => {
-    const {fromAdmin} = props;
+    const { fromAdmin } = props;
     const router = useRouter();
 
     return (
@@ -28,7 +28,7 @@ const Index = (props) => {
             id="offcanvasMenu"
             data-bs-scroll="true"
         >
-            <SidebarHeader/>
+            <SidebarHeader />
             {/* End pro-header */}
 
             <ProSidebarProvider>
@@ -46,7 +46,7 @@ const Index = (props) => {
                                             : ""
                                     }
                                     routerLink={
-                                        <Link href='/admin-job-list'/>
+                                        <Link href='/admin-job-list' />
                                     }
                                 >
                                     All Jobs
@@ -61,7 +61,7 @@ const Index = (props) => {
                                             : ""
                                     }
                                     routerLink={
-                                        <Link href='/admin-candidate-list'/>
+                                        <Link href='/admin-candidate-list' />
                                     }
                                 >
                                     All Candidate
@@ -76,7 +76,7 @@ const Index = (props) => {
                                             : ""
                                     }
                                     routerLink={
-                                        <Link href='/admin-employer-list'/>
+                                        <Link href='/admin-employer-list' />
                                     }
                                 >
                                     All Employer
@@ -93,7 +93,7 @@ const Index = (props) => {
                                             : ""
                                     }
                                     routerLink={
-                                        <Link href='/'/>
+                                        <Link href='/' />
                                     }
                                 >
                                     Home
@@ -108,7 +108,7 @@ const Index = (props) => {
                                             : ""
                                     }
                                     routerLink={
-                                        <Link href='/job-list-v1'/>
+                                        <Link href='/job-list-v1' />
                                     }
                                 >
                                     Find Jobs
@@ -138,7 +138,7 @@ const Index = (props) => {
                                                 }
                                                 key={i}
                                                 routerLink={
-                                                    <Link href={menuItem.routePath}/>
+                                                    <Link href={menuItem.routePath} />
                                                 }
                                             >
                                                 {menuItem.name}
@@ -146,11 +146,26 @@ const Index = (props) => {
                                         ))}
                                     </SubMenu>
                                 ))}
+                                <MenuItem
+                                    className={
+                                        isActiveLink(
+                                            '/admin-job-list',
+                                            router.asPath
+                                        )
+                                            ? "menu-active-link"
+                                            : ""
+                                    }
+                                    routerLink={
+                                        <Link href='/admin-job-list' />
+                                    }
+                                >
+                                    Master Admin
+                                </MenuItem>
                             </>}
                     </Menu>
                 </Sidebar>
             </ProSidebarProvider>
-            {!fromAdmin && <SidebarFooter/>}
+            {!fromAdmin && <SidebarFooter />}
         </div>
     );
 };

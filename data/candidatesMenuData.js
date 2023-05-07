@@ -15,7 +15,7 @@ module.exports = [
   },
   {
     id: 3,
-    name: "My Profile",
+    name: "My Resume",
     icon: "la la-file-invoice",
     routePath: "/candidates-dashboard/my-resume",
     alterRoutePath: "/candidates-dashboard/my-resume?apply=true",
@@ -74,7 +74,7 @@ module.exports = [
     id: 11,
     name: "Logout",
     icon: "la-sign-out",
-    routePath: "/login",
+    routePath: "/",
     active: "",
   },
   {

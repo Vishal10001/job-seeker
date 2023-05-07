@@ -134,13 +134,13 @@ const FormInfoBox = () => {
         </div>
 
         {/* <!-- Input --> */}
-        <div className="form-group col-lg-6 col-md-12">
+        {/* <div className="form-group col-lg-6 col-md-12">
           <label>Allow In Search & Listing</label>
           <select className="chosen-single form-select" required>
             <option>Yes</option>
             <option>No</option>
           </select>
-        </div>
+        </div> */}
 
         {/* <!-- About Company --> */}
         <div className="form-group col-lg-12 col-md-12">

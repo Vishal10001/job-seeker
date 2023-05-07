@@ -6,13 +6,13 @@ module.exports = [
     routePath: "/employers-dashboard/dashboard",
     active: "active",
   },
-  // {
-  //   id: 2,
-  //   name: "Company Profile",
-  //   icon: "la-user-tie",
-  //   routePath: "/employers-dashboard/company-profile",
-  //   active: "active",
-  // },
+  {
+    id: 2,
+    name: "Company Profile",
+    icon: "la-user-tie",
+    routePath: "/employers-dashboard/company-profile",
+    active: "active",
+  },
   {
     id: 3,
     name: "Post a New Job",
@@ -36,7 +36,7 @@ module.exports = [
   },
   {
     id: 6,
-    name: "WatchList Candidates",
+    name: "Shorlist Candidates",
     icon: "la-bookmark-o",
     routePath: "/employers-dashboard/shortlisted-resumes",
     active: "",
@@ -80,7 +80,7 @@ module.exports = [
     id: 11,
     name: "Logout",
     icon: "la-sign-out",
-    routePath: "/login",
+    routePath: "/",
     active: "",
   },
   {

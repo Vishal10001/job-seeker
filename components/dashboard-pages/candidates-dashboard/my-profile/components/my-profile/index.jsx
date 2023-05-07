@@ -4,7 +4,7 @@ import LogoUpload from "./LogoUpload";
 const index = () => {
     return (
         <div className="widget-content">
-            <LogoUpload/>
+            <LogoUpload title='Browse Profile Picture'/>
             {/* End logo and cover photo components */}
             <div>
                 <label className='fw-semibold'>Intro Video</label>

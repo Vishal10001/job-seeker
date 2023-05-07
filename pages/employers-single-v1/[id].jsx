@@ -187,10 +187,10 @@ const EmployersSingleV1 = () => {
                                                 <li>
                                                     Location: <span>{employer?.location}</span>
                                                 </li>
-                                                <li>
+                                                {/* <li>
                                                     Social media:
                                                     <Social/>
-                                                </li>
+                                                </li> */}
                                             </ul>
                                             {/* End compnay-info */}
 

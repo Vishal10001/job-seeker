@@ -202,7 +202,7 @@ const FilterTopBox = (props) => {
                     <div className="show-1023">
                         <button
                             type="button"
-                            className="theme-btn toggle-filters "
+                            className="theme-btn toggle-filters show-1023-1"
                             data-bs-toggle="offcanvas"
                             data-bs-target="#filter-sidebar"
                         >

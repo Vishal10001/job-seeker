@@ -27,49 +27,49 @@ const FilterSidebar = () => {
                 </div>
                 {/* <!-- Filter Block --> */}
 
-                <div className="filter-block">
+                {/* <div className="filter-block">
                     <h4>Location</h4>
                     <div className="form-group">
                         <LocationBox />
-                    </div>
+                    </div> */}
 
                     {/* <p>Radius around selected destination</p>
                     <DestinationRangeSlider /> */}
-                </div>
+                {/* </div> */}
                 {/* <!-- Filter Block --> */}
 
-                <div className="filter-block">
+                {/* <div className="filter-block">
                     <h4>Category</h4>
                     <div className="form-group">
                         <Categories />
                     </div>
-                </div>
+                </div> */}
                 {/* <!-- Filter Block --> */}
 
-                <div className="filter-block">
+                {/* <div className="filter-block">
                     <h4>Candidate Gender</h4>
                     <div className="form-group">
                         <CandidatesGender />
                     </div>
-                </div>
+                </div> */}
                 {/* <!-- Filter Block --> */}
 
-                <div className="checkbox-outer">
+                {/* <div className="checkbox-outer">
                     <h4>Date Posted</h4>
                     <DatePosted />
-                </div>
+                </div> */}
                 {/* <!-- Filter Block --> */}
 
-                <div className="checkbox-outer">
+                {/* <div className="checkbox-outer">
                     <h4>Experience</h4>
                     <Experience />
-                </div>
+                </div> */}
                 {/* <!-- Filter Block --> */}
 
-                <div className=" checkbox-outer">
+                {/* <div className=" checkbox-outer">
                     <h4>Qualification</h4>
                     <Qualification />
-                </div>
+                </div> */}
                 {/* <!-- Filter Block --> */}
             </div>
             {/* Filter Outer */}

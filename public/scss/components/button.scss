@@ -116,6 +116,24 @@ Buttons Styles
   background-color: transparent;
 }
 
+.btn-style-five-blue {
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  color: #fff;
+  background-color: #3071c7;
+  border: 1px solid #fff;
+  line-height: 20px;
+  border-radius: 8px;
+  font-weight: 400;
+  padding: 14px 35px;
+}
+
+.btn-style-five-blue:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
 /* Btn Style Six */
 .btn-style-six {
   position: relative;

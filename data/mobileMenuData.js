@@ -194,7 +194,7 @@ export default [
             },
             {
                 name: "Employers Dashboard",
-                routePath: "/employers-dashboard/company-profile",
+                routePath: "/employers-dashboard/dashboard",
             },
             // {
             //     name: "Employers Single V3",

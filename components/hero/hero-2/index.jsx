@@ -5,17 +5,17 @@ import ImageBox from "./ImageBox";
 
 const index = () => {
   return (
-    <section className="banner-section-two">
+    <section className="banner-section-two no-bg-before">
       <div className="auto-container">
         <div className="row">
           <div className="content-column col-lg-7 col-md-12 col-sm-12">
             <div className="inner-column wow fadeInUp" data-aos="fade-up">
               <div className="title-box">
-                <h3>
+                <h3 className="text-black">
                   Find Your Perfect Job <br />
                   Match
                 </h3>
-                <div className="text">
+                <div className="text-black">
                   Find Jobs, Employment & Career Opportunities
                 </div>
               </div>

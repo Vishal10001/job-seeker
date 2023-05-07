@@ -27,7 +27,7 @@ const index = () => {
       <Hero2 />
       {/* <!-- End Hero Section --> */}
 
-      <section className="work-section">
+      <section className="work-section" id="home-section">
         <div className="auto-container">
           <div className="sec-title text-center">
             <h2>How It Works?</h2>
