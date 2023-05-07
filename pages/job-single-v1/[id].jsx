@@ -22,6 +22,7 @@ const JobSingleDynamicV1 = () => {
   const [company, setCompany] = useState({});
   const id = router.query.id;
   const fromEmployer = router.query.fromEmployer;
+  const fromCandidate = router.query.fromCandidate;
 
   useEffect(() => {
     if (!id) <h1>Loading...</h1>;
@@ -94,14 +95,14 @@ const JobSingleDynamicV1 = () => {
                 {/* End .content */}
 
                 <div className="btn-box">
-                  <Link className="theme-btn btn-style-one" href='/candidates-dashboard/my-resume?apply=true'>
+                  <Link className={`theme-btn btn-style-one ${fromCandidate && 'ui-danger-with-bg'}`} href='/candidates-dashboard/my-resume?apply=true'>
                     {/*<a*/}
                     {/*  href="#"*/}
                     {/*  className="theme-btn btn-style-one"*/}
                     {/*  data-bs-toggle="modal"*/}
                     {/*  data-bs-target="#applyJobModal"*/}
                     {/*>*/}
-                    {fromEmployer ? 'Close Job!' : 'Apply For Job'}
+                    {fromEmployer ? 'Close Job!' : fromCandidate ? 'Cancel Application' : 'Apply For Job'}
                     {/*</a>*/}
                   </Link>
                   {/*<button className="bookmark-btn">*/}

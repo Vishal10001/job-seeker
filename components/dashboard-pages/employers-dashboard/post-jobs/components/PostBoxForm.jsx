@@ -79,7 +79,7 @@ const PostBoxForm = () => {
           </select>
         </div>
 
-        <div className="form-group col-lg-6 col-md-12">
+        {/* <div className="form-group col-lg-6 col-md-12">
           <label>Career Level</label>
           <select className="chosen-single form-select">
             <option>Select</option>
@@ -89,7 +89,7 @@ const PostBoxForm = () => {
             <option>Human Resources</option>
             <option>Management</option>
           </select>
-        </div>
+        </div> */}
 
         <div className="form-group col-lg-6 col-md-12">
           <label>Experience</label>
@@ -100,6 +100,33 @@ const PostBoxForm = () => {
             <option>Retail</option>
             <option>Human Resources</option>
             <option>Management</option>
+          </select>
+        </div>
+
+        {/* <!-- Search Select --> */}
+        <div className="form-group col-lg-6 col-md-12">
+          <label>Skills </label>
+          <Select
+            defaultValue={[specialisms[2]]}
+            isMulti
+            name="colors"
+            options={specialisms}
+            className="basic-multi-select"
+            classNamePrefix="select"
+          />
+        </div>
+
+        {/* <!-- Input --> */}
+        <div className="form-group col-lg-6 col-md-12">
+          <label>Hourly Rate</label>
+          <select className="chosen-single form-select">
+            <option>Select</option>
+            <option>($1-$5)</option>
+            <option>($5-$10)</option>
+            <option>($10-$15)</option>
+            <option>($15-$20)</option>
+            <option>($20-$25)</option>
+            <option>($25-$30)</option>
           </select>
         </div>
 

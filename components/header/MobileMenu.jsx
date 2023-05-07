@@ -24,8 +24,9 @@ const MobileMenu = () => {
                     {/* End .nav-outer */}
 
                     <div className="outer-box">
-                        <div className="login-box">
+                        <div className="login-box" >
                             <a
+                                id='openLogin'
                                 href="#"
                                 className="call-modal"
                                 data-bs-toggle="modal"

@@ -24,7 +24,7 @@
     @media (max-width: 1600px) {
       margin: 0 60px;
     }
-    @media (max-width: 1366px) {
+    @media (max-width: 1150px) {
       margin: 0;
     }
 
@@ -34,7 +34,7 @@
       height: 100%;
       border-radius: 32px;
 
-      @media (max-width: 1366px) {
+      @media (max-width: 1150px) {
         border-radius: 0;
       }
     }
@@ -273,7 +273,7 @@
       right: 60px;
       left: 60px;
     }
-    @media (max-width: 1366px) {
+    @media (max-width: 1150px) {
       right: 0;
       left: 0;
     }

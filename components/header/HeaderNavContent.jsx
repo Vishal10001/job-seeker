@@ -13,9 +13,10 @@ import {
     isActiveLink,
     isActiveParentChaild,
 } from "../../utils/linkActiveChecker";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
-const HeaderNavContent = () => {
+const HeaderNavContent = (props) => {
+    const { navbar } = props;
     const router = useRouter();
 
     return (
@@ -24,13 +25,12 @@ const HeaderNavContent = () => {
                 <ul className="navigation" id="navbar">
                     {/* current dropdown */}
                     <li
-                        className={`${
-                            isActiveParent(homeItems, router.asPath)
+                        className={`${isActiveParent(homeItems, router.asPath)
                                 ? "current"
                                 : ""}`}
-                        // } dropdown`}
+                    // } dropdown`}
                     >
-                        <Link href='/'>
+                        <Link href='/' className={`${navbar ? 'text-white' : 'text-black'}`}>
                             <span>Home</span>
                         </Link>
                         {/*<div className="mega-menu">*/}
@@ -67,15 +67,14 @@ const HeaderNavContent = () => {
                     {/* End homepage menu items */}
 
                     <li
-                        className={`${
-                            isActiveParent(findJobItems, router.asPath)
+                        className={`${isActiveParent(findJobItems, router.asPath)
                                 ? "current"
                                 : ""
-                        } dropdown has-mega-menu`}
+                            } dropdown has-mega-menu`}
                         id="has-mega-menu"
                     >
                         <Link href='/job-list-v1'>
-                            <span>Find Jobs</span>
+                            <span className={`${navbar ? 'text-white' : 'text-black'}`}>Find Jobs</span>
                         </Link>
                         {/*<div className="mega-menu">*/}
                         {/*    <div className="mega-menu-bar row">*/}
@@ -112,21 +111,20 @@ const HeaderNavContent = () => {
                     {/* End findjobs menu items */}
 
                     <li
-                        className={`${
-                            isActiveParent(candidateItems, router.asPath) ||
-                            router.asPath === "/candidates-dashboard/dashboard"
+                        className={`${isActiveParent(candidateItems, router.asPath) ||
+                                router.asPath === "/candidates-dashboard/dashboard"
                                 ? "current"
                                 : ""
                                     ? "current"
                                     : ""
-                        } dropdown`}
+                            } dropdown`}
                     >
-                        <span>Candidates</span>
+                        <span className={`${navbar ? 'text-white' : 'text-black'}`}>Candidates</span>
                         <ul>
                             <li
                                 className={
                                     router.asPath ===
-                                    "/employers-list-v1"
+                                        "/employers-list-v1"
                                         ? "current"
                                         : ""
                                 }
@@ -173,7 +171,7 @@ const HeaderNavContent = () => {
                             <li
                                 className={
                                     router.asPath ===
-                                    "/candidates-dashboard/dashboard"
+                                        "/candidates-dashboard/dashboard"
                                         ? "current"
                                         : ""
                                 }
@@ -187,14 +185,13 @@ const HeaderNavContent = () => {
                     {/* End Candidates menu items */}
 
                     <li
-                        className={`${
-                            isActiveParent(employerItems, router.asPath) ||
-                            router.asPath === "/employers-dashboard/dashboard"
+                        className={`${isActiveParent(employerItems, router.asPath) ||
+                                router.asPath === "/employers-dashboard/dashboard"
                                 ? "current"
                                 : ""
-                        } dropdown`}
+                            } dropdown`}
                     >
-                        <span>Employers</span>
+                        <span className={`${navbar ? 'text-white' : 'text-black'}`}>Employers</span>
                         <ul>
                             {employerItems.map((item) => (
                                 <li key={item.id}>
@@ -209,7 +206,7 @@ const HeaderNavContent = () => {
                                         }
                                     >
                                         <Link href={item.routePath}>
-                                        {item.title}
+                                            {item.title}
                                         </Link>
                                     </span>
                                     {/*<ul>*/}
@@ -236,14 +233,14 @@ const HeaderNavContent = () => {
                             <li
                                 className={
                                     isActiveLink(
-                                        "/employers-dashboard/company-profile",
+                                        "/employers-dashboard/dashbaord",
                                         router.asPath
                                     )
                                         ? "current"
                                         : ""
                                 }
                             >
-                                <Link href="/employers-dashboard/company-profile">
+                                <Link href="/employers-dashboard/dashbaord">
                                     Employers Dashboard
                                 </Link>
                             </li>
@@ -252,15 +249,14 @@ const HeaderNavContent = () => {
                     {/* End Employers menu items */}
 
                     <li
-                        className={`${
-                            isActiveParent(masterAdmin, router.asPath)
+                        className={`${isActiveParent(masterAdmin, router.asPath)
                                 ? "current"
                                 : ""
-                        } dropdown has-mega-menu`}
+                            } dropdown has-mega-menu`}
                         id="has-mega-menu"
                     >
                         <Link href='/admin-job-list'>
-                            <span>Master Admin</span>
+                            <span className={`${navbar ? 'text-white' : 'text-black'}`}>Master Admin</span>
                         </Link>
                     </li>
                     {/* <li

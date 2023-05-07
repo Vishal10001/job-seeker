@@ -46,7 +46,7 @@ const JobListingsTable = () => {
                               <img src={item.logo} alt="logo" />
                             </span>
                             <h4>
-                              <Link href={`/job-single-v1/${item.id}`}>
+                              <Link href={`/job-single-v1/${item.id}?fromCandidate=true`}>
                                 {item.jobTitle}
                               </Link>
                             </h4>

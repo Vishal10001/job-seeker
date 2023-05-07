@@ -1,14 +1,14 @@
 import Link from "next/link";
-import {CircularProgressbar, buildStyles} from "react-circular-progressbar";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import candidatesuData from "../../data/candidatesMenuData";
-import {isActiveLink} from "../../utils/linkActiveChecker";
-import {useRouter} from "next/router";
-import {useDispatch, useSelector} from "react-redux";
-import {menuToggle} from "../../features/toggle/toggleSlice";
+import { isActiveLink } from "../../utils/linkActiveChecker";
+import { useRouter } from "next/router";
+import { useDispatch, useSelector } from "react-redux";
+import { menuToggle } from "../../features/toggle/toggleSlice";
 
 const DashboardCandidatesSidebar = () => {
-    const {menu} = useSelector((state) => state.toggle);
+    const { menu } = useSelector((state) => state.toggle);
     const percentage = 30;
     const router = useRouter();
 
@@ -32,15 +32,15 @@ const DashboardCandidatesSidebar = () => {
                 <ul className="navigation">
                     {candidatesuData.map((item) => (
                         <li
-                            className={`${
-                                isActiveLink(item.routePath, router.asPath, item?.alterRoutePath)
-                                    ? "active"
-                                    : ""
-                            } mb-1`}
+                            className={`${isActiveLink(item.routePath, router.asPath, item?.alterRoutePath)
+                                ? "active"
+                                : ""
+                                } mb-1`}
                             key={item.id}
                             onClick={menuToggleHandler}
                         >
-                            <Link href={item.routePath}>
+                            <Link href={item.routePath}
+                            >
                                 <i className={`la ${item.icon}`}></i>{" "}
                                 {item.name}
                             </Link>

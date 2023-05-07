@@ -1,10 +1,10 @@
 import Link from "next/link";
-import {useEffect, useState} from "react";
-import {useRouter} from "next/router";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import HeaderNavContent from "../header/HeaderNavContent";
 import employerMenuData from "../../data/employerMenuData";
-import {isActiveLink} from "../../utils/linkActiveChecker";
+import { isActiveLink } from "../../utils/linkActiveChecker";
 
 const Header = () => {
     const router = useRouter();
@@ -25,9 +25,8 @@ const Header = () => {
     return (
         // <!-- Main Header-->
         <header
-            className={`main-header header-style-two  ${
-                navbar ? "fixed-header animated slideInDown" : ""
-            }`}
+            className={`main-header header-style-two  ${navbar ? "fixed-header animated slideInDown" : ""
+                }`}
         >
             <div className="auto-container">
                 {/* <!-- Main box --> */}
@@ -37,13 +36,13 @@ const Header = () => {
                         <div className="logo-box">
                             <div className="logo">
                                 <Link href="/">
-                                    <img src="images/logo-2.svg" alt="brand"/>
+                                    <img src={navbar ? "images/logo-2.svg" : "images/logo.svg"} alt="brand" />
                                 </Link>
                             </div>
                         </div>
                         {/* End .logo-box */}
 
-                        <HeaderNavContent/>
+                        <HeaderNavContent navbar={navbar} />
                         {/* <!-- Main Menu End--> */}
                     </div>
                     {/* End .nav-outer */}
@@ -56,7 +55,7 @@ const Header = () => {
                             {/*</Link>*/}
                             <a
                                 href="#"
-                                className="theme-btn btn-style-six call-modal"
+                                className={`theme-btn btn-style-five ${navbar ? 'primary-color-main bg-white' : 'bg-sky-light-blue text-white'} call-modal`}
                                 data-bs-toggle="modal"
                                 data-bs-target="#loginPopupModal"
                             >
@@ -64,7 +63,8 @@ const Header = () => {
                             </a>
                             <Link
                                 href="/employers-dashboard/post-jobs"
-                                className="theme-btn btn-style-five"
+                                // className={`theme-btn bg-${navbar ? 'btn-style-five primary-color-main bg-white' : 'btn-style-five-blue text-white'}`}
+                                className={`theme-btn ${navbar ? 'btn-style-five' : 'btn-style-five-blue'} `}
                             >
                                 <span className="btn-title">Job Post</span>
                             </Link>
@@ -85,20 +85,19 @@ const Header = () => {
                                 width={50}
                                 height={50}
                             />
-                            <span className="name text-white">My Account</span>
+                            <span className={`name ${navbar ? 'text-white' : 'text-black'}`}>My Account</span>
                         </a>
 
                         <ul className="dropdown-menu">
                             {employerMenuData.map((item) => (
                                 <li
-                                    className={`${
-                                        isActiveLink(
-                                            item.routePath,
-                                            router.asPath
-                                        )
+                                    className={`${isActiveLink(
+                                        item.routePath,
+                                        router.asPath
+                                    )
                                             ? "active"
                                             : ""
-                                    } mb-1`}
+                                        } mb-1`}
                                     key={item.id}
                                 >
                                     <Link href={item.routePath}>

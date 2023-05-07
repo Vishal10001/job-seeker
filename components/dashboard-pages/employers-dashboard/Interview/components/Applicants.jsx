@@ -15,7 +15,7 @@ const Applicants = () => {
                                 <img src={candidate.avatar} alt="candidates"/>
                             </figure>
                             <h4 className="name">
-                                <Link href={`/candidate-interview/${candidate.id}`}>
+                                <Link href={`/candidate-interview/${candidate.id}?fromInterview=true`}>
                                     {candidate.name}
                                 </Link>
                             </h4>

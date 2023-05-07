@@ -1,5 +1,5 @@
 import candidatesData from "../../../../../data/candidates";
-import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Link from "next/link";
 
 const WidgetContentBox = () => {
@@ -28,7 +28,7 @@ const WidgetContentBox = () => {
                                         <div className="inner-box">
                                             <div className="content">
                                                 <figure className="image">
-                                                    <img src={candidate.avatar} alt="candidates"/>
+                                                    <img src={candidate.avatar} alt="candidates" />
                                                 </figure>
                                                 <h4 className="name">
                                                     <Link href={`/candidates-single-v1/${candidate.id}?fromAllApplicants=true`}>
@@ -59,9 +59,17 @@ const WidgetContentBox = () => {
                                                     ))}
                                                 </ul>
                                             </div>
+                                            <div className="d-flex align-items-center justify-content-end gap-2 w-100">
+                                                <button className="ui-green-with-bg px-3 py-2 btn-style-one">
+                                                    Add To WatchList
+                                                </button>
+                                                <button className="py-2 px-3 ui-danger-with-bg btn-style-one">
+                                                    Reject
+                                                </button>
+                                            </div>
                                             {/* End content */}
 
-                                            <div className="option-box">
+                                            {/* <div className="option-box">
                                                 <ul className="option-list">
                                                     <li>
                                                         <button data-text="View Aplication">
@@ -86,7 +94,7 @@ const WidgetContentBox = () => {
                                                         </button>
                                                     </li>
                                                 </ul>
-                                            </div>
+                                            </div> */}
                                             {/* End admin options box */}
                                         </div>
                                     </div>
@@ -105,7 +113,7 @@ const WidgetContentBox = () => {
                                         <div className="inner-box">
                                             <div className="content">
                                                 <figure className="image">
-                                                    <img src={candidate.avatar} alt="candidates"/>
+                                                    <img src={candidate.avatar} alt="candidates" />
                                                 </figure>
                                                 <h4 className="name">
                                                     <Link href={`/candidates-single-v1/${candidate.id}`}>
@@ -180,7 +188,7 @@ const WidgetContentBox = () => {
                                         <div className="inner-box">
                                             <div className="content">
                                                 <figure className="image">
-                                                    <img src={candidate.avatar} alt="candidates"/>
+                                                    <img src={candidate.avatar} alt="candidates" />
                                                 </figure>
                                                 <h4 className="name">
                                                     <Link href={`/candidates-single-v1/${candidate.id}`}>

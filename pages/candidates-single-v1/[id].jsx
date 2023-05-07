@@ -249,7 +249,13 @@ const CandidateSingleDynamicV1 = () => {
                                         {(fromAllApplicants || fromEmployer) && <Link className='w-100'
                                             href='/employers-dashboard/shortlisted-resumes'>
                                             <button className="theme-btn ui-green-with-bg w-100 btn-style-one">
-                                                Add To WatchList
+                                                Add To ShortList
+                                            </button>
+                                        </Link>}
+                                        {(fromAllApplicants || fromEmployer) && <Link className='w-100'
+                                            href='/employers-dashboard/shortlisted-resumes'>
+                                            <button className="theme-btn ui-danger-with-bg w-100 btn-style-one">
+                                                Reject
                                             </button>
                                         </Link>}
                                         {fromShortList && <Link className='w-100'

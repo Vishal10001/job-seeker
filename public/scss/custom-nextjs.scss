@@ -121,6 +121,7 @@
 }
 
 .banner-style-two.dark {
+
   h3,
   p {
     color: #696969;
@@ -267,7 +268,7 @@
 
 .menu-active-link,
 .menu-active {
-  > a {
+  >a {
     color: var(--primary-color) !important;
   }
 }
@@ -312,7 +313,7 @@
   display: none;
 }
 
-.ui-checkbox input[type="radio"]:checked ~ span::before {
+.ui-checkbox input[type="radio"]:checked~span::before {
   content: "\f00c";
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -393,4 +394,24 @@
 
 .bg-orange-600 {
   background-color: rgb(234 88 12);
+}
+
+.no-bg-before:before {
+  background: none !important;
+}
+
+.d-block {
+  display: block;
+}
+
+.primary-color-main {
+  color: #1967d2 !important;
+}
+
+.bg-sky-light-blue {
+  background-color: #3071c7 !important;
+}
+
+.bg-white{
+  background-color: white !important;
 }
