@@ -36,7 +36,7 @@ module.exports = [
   },
   {
     id: 6,
-    name: "Shortlisted Resumes",
+    name: "WatchList Candidates",
     icon: "la-bookmark-o",
     routePath: "/employers-dashboard/shortlisted-resumes",
     active: "",

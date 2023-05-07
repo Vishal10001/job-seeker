@@ -208,16 +208,16 @@ const EmployersSingleV1 = () => {
                                     </div>
                                     {/* End company-widget */}
 
-                                    <div className="sidebar-widget">
+                                    {/* <div className="sidebar-widget"> */}
                                         {/* <!-- Map Widget --> */}
-                                        <h4 className="widget-title">Company Location</h4>
+                                        {/* <h4 className="widget-title">Company Location</h4>
                                         <div className="widget-content">
                                             <div style={{height: "300px", width: "100%"}}>
                                                 <MapJobFinder/>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         {/* <!--  Map Widget --> */}
-                                    </div>
+                                    {/* </div> */}
                                     {/*{fromCandidate && <div className='d-flex align-items-center justify-content-end'>*/}
                                     {/*    <button className="theme-btn w-100 btn-style-one">Add To Watchlist</button>*/}
                                     {/*</div>}*/}

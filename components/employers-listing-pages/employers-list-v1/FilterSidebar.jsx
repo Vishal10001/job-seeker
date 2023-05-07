@@ -10,12 +10,12 @@ const FilterSidebar = () => {
     return (
         <div className="inner-column pd-right">
             <div className="filters-outer">
-                <button
+                {/* <button
                     type="button"
-                    className="btn-close text-reset close-filters show-1023"
+                    className="btn-close text-reset close-filters show-1023-1"
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
-                ></button>
+                ></button> */}
                 {/* End .close filter */}
 
                 <div className="filter-block">

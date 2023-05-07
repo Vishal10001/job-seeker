@@ -31,7 +31,7 @@ const WidgetContentBox = () => {
                                                     <img src={candidate.avatar} alt="candidates"/>
                                                 </figure>
                                                 <h4 className="name">
-                                                    <Link href={`/candidates-single-v1/${candidate.id}`}>
+                                                    <Link href={`/candidates-single-v1/${candidate.id}?fromAllApplicants=true`}>
                                                         {candidate.name}
                                                     </Link>
                                                 </h4>

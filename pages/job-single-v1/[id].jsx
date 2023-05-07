@@ -21,12 +21,13 @@ const JobSingleDynamicV1 = () => {
   const router = useRouter();
   const [company, setCompany] = useState({});
   const id = router.query.id;
+  const fromEmployer = router.query.fromEmployer;
 
   useEffect(() => {
     if (!id) <h1>Loading...</h1>;
     else setCompany(jobs.find((item) => item.id == id));
 
-    return () => {};
+    return () => { };
   }, [id]);
 
   return (
@@ -94,14 +95,14 @@ const JobSingleDynamicV1 = () => {
 
                 <div className="btn-box">
                   <Link className="theme-btn btn-style-one" href='/candidates-dashboard/my-resume?apply=true'>
-                  {/*<a*/}
-                  {/*  href="#"*/}
-                  {/*  className="theme-btn btn-style-one"*/}
-                  {/*  data-bs-toggle="modal"*/}
-                  {/*  data-bs-target="#applyJobModal"*/}
-                  {/*>*/}
-                    Apply For Job
-                  {/*</a>*/}
+                    {/*<a*/}
+                    {/*  href="#"*/}
+                    {/*  className="theme-btn btn-style-one"*/}
+                    {/*  data-bs-toggle="modal"*/}
+                    {/*  data-bs-target="#applyJobModal"*/}
+                    {/*>*/}
+                    {fromEmployer ? 'Close Job!' : 'Apply For Job'}
+                    {/*</a>*/}
                   </Link>
                   {/*<button className="bookmark-btn">*/}
                   {/*  <i className="flaticon-bookmark"></i>*/}
@@ -158,7 +159,7 @@ const JobSingleDynamicV1 = () => {
                 {/*</div>*/}
                 {/* <!-- Other Options --> */}
 
-                <div className="related-jobs">
+                {!fromEmployer && <div className="related-jobs">
                   <div className="title-box">
                     <h3>Related Jobs</h3>
                     <div className="text">
@@ -168,7 +169,7 @@ const JobSingleDynamicV1 = () => {
                   {/* End title box */}
 
                   <RelatedJobs />
-                </div>
+                </div>}
                 {/* <!-- Related Jobs --> */}
               </div>
               {/* End .content-column */}
@@ -181,14 +182,14 @@ const JobSingleDynamicV1 = () => {
                     <JobOverView />
 
                     {/* <!-- Map Widget --> */}
-                    <h4 className="widget-title">Job Location</h4>
+                    {/* <h4 className="widget-title">Job Location</h4>
                     <div className="widget-content">
                       <div className="map-outer">
                         <div style={{ height: "300px", width: "100%" }}>
                           <MapJobFinder />
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                     {/* <!--  Map Widget --> */}
 
                     <h4 className="widget-title">Job Skills</h4>
@@ -199,7 +200,7 @@ const JobSingleDynamicV1 = () => {
                   </div>
                   {/* End .sidebar-widget */}
 
-                  <div className="sidebar-widget company-widget">
+                  {!fromEmployer && <div className="sidebar-widget company-widget">
                     <div className="widget-content">
                       <div className="company-title">
                         <div className="company-logo">
@@ -226,7 +227,7 @@ const JobSingleDynamicV1 = () => {
                       </div>
                       {/* End btn-box */}
                     </div>
-                  </div>
+                  </div>}
                   {/* End .company-widget */}
                 </aside>
                 {/* End .sidebar */}

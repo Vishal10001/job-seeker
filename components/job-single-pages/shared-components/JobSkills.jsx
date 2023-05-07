@@ -12,6 +12,7 @@ const JobSkills = (props) => {
         "react",
     ];
     return (
+        <>
         <ul className={`job-skills ${className}`}>
             {skills.map((skill, i) => (
                 <React.Fragment key={i}>
@@ -32,6 +33,7 @@ const JobSkills = (props) => {
                 </React.Fragment>
             ))}
         </ul>
+        </>
     );
 };
 

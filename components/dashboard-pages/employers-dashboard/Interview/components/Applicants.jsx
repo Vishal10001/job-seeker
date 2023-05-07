@@ -15,7 +15,7 @@ const Applicants = () => {
                                 <img src={candidate.avatar} alt="candidates"/>
                             </figure>
                             <h4 className="name">
-                                <Link href={`/candidates-single-v1/${candidate.id}`}>
+                                <Link href={`/candidate-interview/${candidate.id}`}>
                                     {candidate.name}
                                 </Link>
                             </h4>
@@ -43,13 +43,13 @@ const Applicants = () => {
                         </div>
                         {/* End content */}
 
-                        <div className="option-box">
+                        {/* <div className="option-box">
                             <ul className="option-list">
-                                {/*<li>*/}
-                                {/*  <button data-text="View Interview Details">*/}
-                                {/*    <span className="la la-eye"></span>*/}
-                                {/*  </button>*/}
-                                {/*</li>*/}
+                                <li>
+                                 <button data-text="View Interview Details">
+                                   <span className="la la-eye"></span>
+                                 </button>
+                                </li>
                                 <li>
                                     <Link href='/employers-dashboard/interview-list/give-feedback'>
                                         <button data-text="Select Candidate">
@@ -68,7 +68,7 @@ const Applicants = () => {
                                     </button>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                         {/* End admin options box */}
                     </div>
                 </div>

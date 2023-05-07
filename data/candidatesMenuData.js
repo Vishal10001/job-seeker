@@ -13,14 +13,14 @@ module.exports = [
     routePath: "/candidates-dashboard/my-profile",
     active: "",
   },
-  // {
-  //   id: 3,
-  //   name: "My Resume",
-  //   icon: "la la-file-invoice",
-  //   routePath: "/candidates-dashboard/my-resume",
-  //   alterRoutePath: "/candidates-dashboard/my-resume?apply=true",
-  //   active: "",
-  // },
+  {
+    id: 3,
+    name: "My Profile",
+    icon: "la la-file-invoice",
+    routePath: "/candidates-dashboard/my-resume",
+    alterRoutePath: "/candidates-dashboard/my-resume?apply=true",
+    active: "",
+  },
   {
     id: 4,
     name: "Applied Jobs",

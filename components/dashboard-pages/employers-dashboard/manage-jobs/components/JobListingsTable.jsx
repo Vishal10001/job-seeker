@@ -30,7 +30,7 @@ const JobListingsTable = () => {
                 <th>Applications</th>
                 <th>Created & Expired</th>
                 <th>Status</th>
-                <th>Action</th>
+                {/* <th>Action</th> */}
               </tr>
             </thead>
 
@@ -46,7 +46,7 @@ const JobListingsTable = () => {
                             <img src={item.logo} alt="logo" />
                           </span>
                           <h4>
-                            <Link href={`/job-single-v3/${item.id}`}>
+                            <Link href={`/job-single-v1/${item.id}?fromEmployer=true`}>
                               {item.jobTitle}
                             </Link>
                           </h4>
@@ -71,8 +71,8 @@ const JobListingsTable = () => {
                     October 27, 2017 <br />
                     April 25, 2011
                   </td>
-                  <td className="status">Active</td>
-                  <td>
+                  <td className="status">Open</td>
+                  {/* <td>
                     <div className="option-box">
                       <ul className="option-list">
                         <li>
@@ -92,7 +92,7 @@ const JobListingsTable = () => {
                         </li>
                       </ul>
                     </div>
-                  </td>
+                  </td> */}
                 </tr>
               ))}
             </tbody>

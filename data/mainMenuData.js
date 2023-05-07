@@ -156,7 +156,7 @@ export const findJobItems = [
 export const employerItems = [
     {
         id: 1,
-        title: "Candidates List",
+        title: "Candidate Section",
         routePath: "/candidates-list",
         // items: [
         //     {
@@ -200,10 +200,10 @@ export const employerItems = [
 export const candidateItems = [
     {
         id: 1,
-        title: "Candidates List",
+        title: "Candidate Section",
         items: [
             {
-                name: "Candidates List",
+                name: "Candidate Section",
                 routePath: "/candidates-list-v1",
             },
             // {

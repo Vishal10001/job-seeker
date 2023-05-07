@@ -6,8 +6,8 @@ import LoginPopup from "../../components/common/form/login/LoginPopup";
 import FooterDefault from "../../components/footer/common-footer";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import MobileMenu from "../../components/header/MobileMenu";
-import {useRouter} from "next/router";
-import {useEffect, useState} from "react";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import Seo from "../../components/common/Seo";
 import Contact from "../../components/candidates-single-pages/shared-components/Contact";
 import GalleryBox from "../../components/candidates-single-pages/shared-components/GalleryBox";
@@ -19,8 +19,11 @@ const CandidateSingleDynamicV1 = () => {
     const router = useRouter();
     const [candidate, setCandidates] = useState({});
     const id = router.query.id;
+    const fromInterview = router.query?.fromInterview;
+    const fromAllApplicants = router.query?.fromAllApplicants;
+    const fromShortList = router.query?.fromShortList;
     const fromEmployer = router.query?.fromEmployer;
-    console.log('fromEmployer', fromEmployer)
+
     useEffect(() => {
         if (!id) <h1>Loading...</h1>;
         else setCandidates(candidates.find((item) => item.id == id));
@@ -31,18 +34,18 @@ const CandidateSingleDynamicV1 = () => {
 
     return (
         <>
-            <Seo pageTitle="Candidate Single Dyanmic V1"/>
+            <Seo pageTitle="Candidate Single Dyanmic V1" />
 
             {/* <!-- Header Span --> */}
             <span className="header-span"></span>
 
-            <LoginPopup/>
+            <LoginPopup />
             {/* End Login Popup Modal */}
 
-            <DefaulHeader/>
+            <DefaulHeader />
             {/* <!--End Main Header --> */}
 
-            <MobileMenu/>
+            <MobileMenu />
             {/* End MobileMenu */}
 
             {/* <!-- Job Detail Section --> */}
@@ -53,7 +56,7 @@ const CandidateSingleDynamicV1 = () => {
                             <div className="inner-box">
                                 <div className="content">
                                     <figure className="image">
-                                        <img src={candidate?.avatar} alt="avatar"/>
+                                        <img src={candidate?.avatar} alt="avatar" />
                                     </figure>
                                     <h4 className="name">{candidate?.name}</h4>
 
@@ -106,7 +109,7 @@ const CandidateSingleDynamicV1 = () => {
                                 <div className="job-detail">
                                     <div className="video-outer">
                                         <h4>Candidates About</h4>
-                                        <AboutVideo/>
+                                        <AboutVideo />
                                     </div>
                                     {/* <!-- About Video Box --> */}
                                     <p>
@@ -238,18 +241,30 @@ const CandidateSingleDynamicV1 = () => {
                                         <h4 className="widget-title">Professional Skills</h4>
                                         <div className="widget-content">
                                             <ul className="job-skills">
-                                                <JobSkills/>
+                                                <JobSkills />
                                             </ul>
                                         </div>
                                     </div>
-                                    {fromEmployer && <div className='d-flex align-items-center justify-content-end'>
-                                        <Link className='w-100'
+                                    <div className='d-flex flex-column gap-1 align-items-center justify-content-end'>
+                                        {(fromAllApplicants || fromEmployer) && <Link className='w-100'
                                             href='/employers-dashboard/shortlisted-resumes'>
-                                            <button className="theme-btn w-100 btn-style-one">
-                                                Add To watchList
+                                            <button className="theme-btn ui-green-with-bg w-100 btn-style-one">
+                                                Add To WatchList
                                             </button>
-                                        </Link>
-                                    </div>}
+                                        </Link>}
+                                        {fromShortList && <Link className='w-100'
+                                            href='/employers-dashboard/shortlisted-resumes'>
+                                            <button className="theme-btn ui-danger-with-bg w-100 btn-style-one">
+                                                Remove From WatchList
+                                            </button>
+                                        </Link>}
+                                        {fromInterview && <Link className='w-100'
+                                            href='/employers-dashboard/shortlisted-resumes'>
+                                            <button className="theme-btn ui-danger-with-bg w-100 btn-style-one">
+                                                Remove From Interview List
+                                            </button>
+                                        </Link>}
+                                    </div>
                                     {/* End .sidebar-widget skill widget */}
 
                                     {/*<div className="sidebar-widget contact-widget">*/}
@@ -272,7 +287,7 @@ const CandidateSingleDynamicV1 = () => {
             </section>
             {/* <!-- End Job Detail Section --> */}
 
-            <FooterDefault footerStyle="alternate5"/>
+            <FooterDefault footerStyle="alternate5" />
             {/* <!-- End Main Footer --> */}
         </>
     );
