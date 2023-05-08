@@ -233,14 +233,14 @@ const HeaderNavContent = (props) => {
                             <li
                                 className={
                                     isActiveLink(
-                                        "/employers-dashboard/dashbaord",
+                                        "/employers-dashboard/dashboard",
                                         router.asPath
                                     )
                                         ? "current"
                                         : ""
                                 }
                             >
-                                <Link href="/employers-dashboard/dashbaord">
+                                <Link href="/employers-dashboard/dashboard">
                                     Employers Dashboard
                                 </Link>
                             </li>
